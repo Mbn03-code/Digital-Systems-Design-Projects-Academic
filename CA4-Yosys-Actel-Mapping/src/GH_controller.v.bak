@@ -1,0 +1,80 @@
+module GH_controller (
+    input  wire clk,
+    input  wire reset,
+    input  wire start,
+    input  wire prng_done,
+    input  wire count_done,
+
+    output reg  start_prng,
+    output reg  stage_load,
+    output reg  load_init,
+    output reg  count_enable,
+    output reg  done
+);
+    reg flag;
+    reg [1:0] state, next_state;
+
+    localparam SIDLE       = 2'b00;
+    localparam SLOAD_INIT  = 2'b01;
+    localparam SPRNG       = 2'b10;
+    localparam SCHECKDONE  = 2'b11;
+
+    //=====================
+    // State Register
+    //=====================
+    always @(posedge clk or posedge reset) begin
+        if (reset)
+            state <= SIDLE;
+            flag <= 0;
+        else
+            state <= next_state;
+    end
+
+    //=====================
+    // Next State Logic
+    //=====================
+    always @(*) begin
+        start_prng   = 0;
+        load_init    = 0;
+        count_enable = 0;
+        stage_load   = 0;
+        done         = 0;
+  
+        next_state=state;
+        case (state)
+            SIDLE: begin
+                flag = 0;
+                if (start)
+                    next_state = SLOAD_INIT;
+                else
+                    next_state = SIDLE;
+            end
+
+            SLOAD_INIT: begin
+                load_init = 1;
+                next_state = SPRNG;
+            end
+
+            SPRNG: begin
+                start_prng = 1;
+                if (prng_done)
+                    next_state = SCHECKDONE;
+                else if(prng_done && count_done)
+                    flag =1;
+                    next_state = SCHECKDONE;
+                else
+                    next_state = SPRNG;
+            end
+
+            SCHECKDONE: begin
+                if (flag)
+                    next_state = SIDLE;
+                else
+                    next_state = SPRNG;
+            end
+
+            default: next_state = SIDLE;
+        endcase
+    end
+
+endmodule

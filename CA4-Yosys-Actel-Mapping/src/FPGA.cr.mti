@@ -1,0 +1,92 @@
+C:/Users/Notebook/Desktop/tehUni/CAD/CA4/FPGA/GH.v {1 {vlog -work work -nocovercells C:/Users/Notebook/Desktop/tehUni/CAD/CA4/FPGA/GH.v
+Model Technology ModelSim ALTERA vlog 6.3g_p1 Compiler 2008.08 Aug 13 2008
+-- Compiling module GH
+
+Top level modules:
+	GH
+
+} {} {}} C:/Users/Notebook/Desktop/tehUni/CAD/CA4/FPGA/tb_top.v {1 {vlog -work work -nocovercells C:/Users/Notebook/Desktop/tehUni/CAD/CA4/FPGA/tb_top.v
+Model Technology ModelSim ALTERA vlog 6.3g_p1 Compiler 2008.08 Aug 13 2008
+-- Compiling module GH_top_tb
+
+Top level modules:
+	GH_top_tb
+
+} {} {}} C:/Users/Notebook/Desktop/tehUni/CAD/CA4/FPGA/counter.v {1 {vlog -work work -nocovercells C:/Users/Notebook/Desktop/tehUni/CAD/CA4/FPGA/counter.v
+Model Technology ModelSim ALTERA vlog 6.3g_p1 Compiler 2008.08 Aug 13 2008
+-- Compiling module counter
+
+Top level modules:
+	counter
+
+} {} {}} C:/Users/Notebook/Desktop/tehUni/CAD/CA4/FPGA/PRNG_controller.v {1 {vlog -work work -nocovercells C:/Users/Notebook/Desktop/tehUni/CAD/CA4/FPGA/PRNG_controller.v
+Model Technology ModelSim ALTERA vlog 6.3g_p1 Compiler 2008.08 Aug 13 2008
+-- Compiling module PRNG_controller
+
+Top level modules:
+	PRNG_controller
+
+} {} {}} C:/Users/Notebook/Desktop/tehUni/CAD/CA4/FPGA/GH_controller.v {1 {vlog -work work -nocovercells C:/Users/Notebook/Desktop/tehUni/CAD/CA4/FPGA/GH_controller.v
+Model Technology ModelSim ALTERA vlog 6.3g_p1 Compiler 2008.08 Aug 13 2008
+-- Compiling module GH_controller
+
+Top level modules:
+	GH_controller
+
+} {} {}} C:/Users/Notebook/Desktop/tehUni/CAD/CA4/FPGA/GH_datapath.v {1 {vlog -work work -nocovercells C:/Users/Notebook/Desktop/tehUni/CAD/CA4/FPGA/GH_datapath.v
+Model Technology ModelSim ALTERA vlog 6.3g_p1 Compiler 2008.08 Aug 13 2008
+-- Compiling module GH_datapath
+
+Top level modules:
+	GH_datapath
+
+} {} {}} C:/Users/Notebook/Desktop/tehUni/CAD/CA4/FPGA/PRNG_datapath.v {1 {vlog -work work -nocovercells C:/Users/Notebook/Desktop/tehUni/CAD/CA4/FPGA/PRNG_datapath.v
+Model Technology ModelSim ALTERA vlog 6.3g_p1 Compiler 2008.08 Aug 13 2008
+-- Compiling module PRNG_Datapath
+
+Top level modules:
+	PRNG_Datapath
+
+} {} {}} C:/Users/Notebook/Desktop/tehUni/CAD/CA4/FPGA/register.v {1 {vlog -work work -nocovercells C:/Users/Notebook/Desktop/tehUni/CAD/CA4/FPGA/register.v
+Model Technology ModelSim ALTERA vlog 6.3g_p1 Compiler 2008.08 Aug 13 2008
+-- Compiling module register
+
+Top level modules:
+	register
+
+} {} {}} C:/Users/Notebook/Desktop/tehUni/CAD/CA4/FPGA/registerFile.v {1 {vlog -work work -nocovercells C:/Users/Notebook/Desktop/tehUni/CAD/CA4/FPGA/registerFile.v
+Model Technology ModelSim ALTERA vlog 6.3g_p1 Compiler 2008.08 Aug 13 2008
+-- Compiling module registerFile
+
+Top level modules:
+	registerFile
+
+} {} {}} C:/Users/Notebook/Desktop/tehUni/CAD/CA4/FPGA/constant_rom.v {1 {vlog -work work -nocovercells C:/Users/Notebook/Desktop/tehUni/CAD/CA4/FPGA/constant_rom.v
+Model Technology ModelSim ALTERA vlog 6.3g_p1 Compiler 2008.08 Aug 13 2008
+-- Compiling module constant_rom
+
+Top level modules:
+	constant_rom
+
+} {} {}} C:/Users/Notebook/Desktop/tehUni/CAD/CA4/FPGA/adder.v {1 {vlog -work work -nocovercells C:/Users/Notebook/Desktop/tehUni/CAD/CA4/FPGA/adder.v
+Model Technology ModelSim ALTERA vlog 6.3g_p1 Compiler 2008.08 Aug 13 2008
+-- Compiling module adder
+
+Top level modules:
+	adder
+
+} {} {}} C:/Users/Notebook/Desktop/tehUni/CAD/CA4/FPGA/F_function.v {1 {vlog -work work -nocovercells C:/Users/Notebook/Desktop/tehUni/CAD/CA4/FPGA/F_function.v
+Model Technology ModelSim ALTERA vlog 6.3g_p1 Compiler 2008.08 Aug 13 2008
+-- Compiling module F_function
+
+Top level modules:
+	F_function
+
+} {} {}} C:/Users/Notebook/Desktop/tehUni/CAD/CA4/FPGA/shiftRegister.v {1 {vlog -work work -nocovercells C:/Users/Notebook/Desktop/tehUni/CAD/CA4/FPGA/shiftRegister.v
+Model Technology ModelSim ALTERA vlog 6.3g_p1 Compiler 2008.08 Aug 13 2008
+-- Compiling module shift_register
+
+Top level modules:
+	shift_register
+
+} {} {}}

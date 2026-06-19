@@ -1,0 +1,29 @@
+C:/Users/Notebook/Desktop/tehUni/CAD/CA5/Test1/codes/datapath.v {1 {vlog -work work -nocovercells C:/Users/Notebook/Desktop/tehUni/CAD/CA5/Test1/codes/datapath.v
+Model Technology ModelSim ALTERA vlog 6.3g_p1 Compiler 2008.08 Aug 13 2008
+-- Compiling module datapath
+
+Top level modules:
+	datapath
+
+} {} {}} C:/Users/Notebook/Desktop/tehUni/CAD/CA5/Test1/codes/top.v {1 {vlog -work work -nocovercells C:/Users/Notebook/Desktop/tehUni/CAD/CA5/Test1/codes/top.v
+Model Technology ModelSim ALTERA vlog 6.3g_p1 Compiler 2008.08 Aug 13 2008
+-- Compiling module top
+
+Top level modules:
+	top
+
+} {} {}} C:/Users/Notebook/Desktop/tehUni/CAD/CA5/Test1/TestBench.v {1 {vlog -work work -nocovercells C:/Users/Notebook/Desktop/tehUni/CAD/CA5/Test1/TestBench.v
+Model Technology ModelSim ALTERA vlog 6.3g_p1 Compiler 2008.08 Aug 13 2008
+-- Compiling module tb_top
+
+Top level modules:
+	tb_top
+
+} {} {}} C:/Users/Notebook/Desktop/tehUni/CAD/CA5/Test1/codes/controller.v {1 {vlog -work work -nocovercells C:/Users/Notebook/Desktop/tehUni/CAD/CA5/Test1/codes/controller.v
+Model Technology ModelSim ALTERA vlog 6.3g_p1 Compiler 2008.08 Aug 13 2008
+-- Compiling module controller
+
+Top level modules:
+	controller
+
+} {} {}}

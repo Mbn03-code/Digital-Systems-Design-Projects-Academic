@@ -1,0 +1,86 @@
+C:/Users/Notebook/Desktop/tehUni/CAD/1/cad/GH_datapath.v {1 {vlog -work work -nocovercells C:/Users/Notebook/Desktop/tehUni/CAD/1/cad/GH_datapath.v
+Model Technology ModelSim ALTERA vlog 6.3g_p1 Compiler 2008.08 Aug 13 2008
+-- Compiling module GH_datapath
+
+Top level modules:
+	GH_datapath
+
+} {} {}} C:/Users/Notebook/Desktop/tehUni/CAD/1/cad/GH.v {1 {vlog -work work -nocovercells C:/Users/Notebook/Desktop/tehUni/CAD/1/cad/GH.v
+Model Technology ModelSim ALTERA vlog 6.3g_p1 Compiler 2008.08 Aug 13 2008
+-- Compiling module GH_top
+-- Compiling module tb_GH_TOP
+
+Top level modules:
+	tb_GH_TOP
+
+} {} {}} C:/Users/Notebook/Desktop/tehUni/CAD/1/cad/PRNG-TOP.v {1 {vlog -work work -nocovercells C:/Users/Notebook/Desktop/tehUni/CAD/1/cad/PRNG-TOP.v
+Model Technology ModelSim ALTERA vlog 6.3g_p1 Compiler 2008.08 Aug 13 2008
+-- Compiling module PRNG
+
+Top level modules:
+	PRNG
+
+} {} {}} C:/Users/Notebook/Desktop/tehUni/CAD/1/cad/Adder1.v {1 {vlog -work work -nocovercells C:/Users/Notebook/Desktop/tehUni/CAD/1/cad/Adder1.v
+Model Technology ModelSim ALTERA vlog 6.3g_p1 Compiler 2008.08 Aug 13 2008
+-- Compiling module adder
+
+Top level modules:
+	adder
+
+} {} {}} C:/Users/Notebook/Desktop/tehUni/CAD/1/cad/register.v {1 {vlog -work work -nocovercells C:/Users/Notebook/Desktop/tehUni/CAD/1/cad/register.v
+Model Technology ModelSim ALTERA vlog 6.3g_p1 Compiler 2008.08 Aug 13 2008
+-- Compiling module register
+
+Top level modules:
+	register
+
+} {} {}} C:/Users/Notebook/Desktop/tehUni/CAD/1/cad/shifter_register_6.v {1 {vlog -work work -nocovercells C:/Users/Notebook/Desktop/tehUni/CAD/1/cad/shifter_register_6.v
+Model Technology ModelSim ALTERA vlog 6.3g_p1 Compiler 2008.08 Aug 13 2008
+-- Compiling module shift_register_6
+
+Top level modules:
+	shift_register_6
+
+} {} {}} C:/Users/Notebook/Desktop/tehUni/CAD/1/cad/left-rotate.v {1 {vlog -work work -nocovercells C:/Users/Notebook/Desktop/tehUni/CAD/1/cad/left-rotate.v
+Model Technology ModelSim ALTERA vlog 6.3g_p1 Compiler 2008.08 Aug 13 2008
+-- Compiling module rotate
+
+Top level modules:
+	rotate
+
+} {} {}} C:/Users/Notebook/Desktop/tehUni/CAD/1/cad/counter.v {1 {vlog -work work -nocovercells C:/Users/Notebook/Desktop/tehUni/CAD/1/cad/counter.v
+Model Technology ModelSim ALTERA vlog 6.3g_p1 Compiler 2008.08 Aug 13 2008
+-- Compiling module counter
+
+Top level modules:
+	counter
+
+} {} {}} C:/Users/Notebook/Desktop/tehUni/CAD/1/cad/PRNG-controller.v {1 {vlog -work work -sv -nocovercells C:/Users/Notebook/Desktop/tehUni/CAD/1/cad/PRNG-controller.v
+Model Technology ModelSim ALTERA vlog 6.3g_p1 Compiler 2008.08 Aug 13 2008
+-- Compiling module PRNG_controller
+
+Top level modules:
+	PRNG_controller
+
+} {} {}} C:/Users/Notebook/Desktop/tehUni/CAD/1/cad/GH_controller.v {1 {vlog -work work -sv -nocovercells C:/Users/Notebook/Desktop/tehUni/CAD/1/cad/GH_controller.v
+Model Technology ModelSim ALTERA vlog 6.3g_p1 Compiler 2008.08 Aug 13 2008
+-- Compiling module GH_controller
+
+Top level modules:
+	GH_controller
+
+} {} {}} C:/Users/Notebook/Desktop/tehUni/CAD/1/cad/F_function.v {1 {vlog -work work -nocovercells C:/Users/Notebook/Desktop/tehUni/CAD/1/cad/F_function.v
+Model Technology ModelSim ALTERA vlog 6.3g_p1 Compiler 2008.08 Aug 13 2008
+-- Compiling module F_function
+
+Top level modules:
+	F_function
+
+} {} {}} C:/Users/Notebook/Desktop/tehUni/CAD/1/cad/PRNG-datapath.v {1 {vlog -work work -nocovercells C:/Users/Notebook/Desktop/tehUni/CAD/1/cad/PRNG-datapath.v
+Model Technology ModelSim ALTERA vlog 6.3g_p1 Compiler 2008.08 Aug 13 2008
+-- Compiling module PRNG_Datapath
+
+Top level modules:
+	PRNG_Datapath
+
+} {} {}}

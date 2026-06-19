@@ -1,0 +1,147 @@
+module GH_datapath(
+    input  wire        clk,
+    input  wire        reset,
+    input  wire [31:0] data_in,
+    input  wire [5:0]  count,
+
+    input  wire        start_prng,
+    output wire        prng_done,
+
+    input  wire        stage_load,
+    input  wire [2:0]  stage_sel,
+    input  wire        load_init,   
+
+    output wire [31:0] data_out
+);
+    
+    wire [7:0] a0 = 8'h01;
+    wire [7:0] b0 = 8'h89;
+    wire [7:0] c0 = 8'hFE;
+    wire [7:0] d0 = 8'h76;
+
+
+    reg [7:0] constant [0:63];
+    initial $readmemh("constant.mem", constant);
+
+    wire [1:0] rnd_out;
+    wire [7:0] M;
+    regfile4x8_parallel RF (
+        .clk(clk),
+        .rst(rst),
+        .data_in(data_in),
+        .write_en(1'b1),
+        .read_addr(rnd_out),
+        .read_data(M)
+    );
+
+    
+    wire [7:0] A, B, C, D;
+    wire [7:0] adder2_out;  
+    wire [7:0] reg_adder1_out;
+
+    register A_reg (
+    .clk(clk),
+    .rst(reset),
+    .ld(load_init || (stage_sel==3 && stage_load)),
+    .in(load_init ? a0 : D),
+    .out(A)
+    );
+
+    register B_reg (
+        .clk(clk),
+        .rst(reset),
+        .ld(load_init || (stage_sel==3 && stage_load)),
+        .in(load_init ? b0 : adder2_out),
+        .out(B)
+    );
+
+    register C_reg (
+        .clk(clk),
+        .rst(reset),
+        .ld(load_init || (stage_sel==3 && stage_load)),
+        .in(load_init ? c0 : B),
+        .out(C)
+    );
+
+    register D_reg (
+        .clk(clk),
+        .rst(reset),
+        .ld(load_init || (stage_sel==3 && stage_load)),
+        .in(load_init ? d0 : C),
+        .out(D)
+    );
+
+
+    // --- PRNG ---
+    PRNG PRNG_inst (
+        .clk(clk),
+        .reset(reset),
+        .start(start_prng),
+        .data_in(count),
+        .rnd_out(rnd_out),
+        .done(prng_done)
+    );
+
+    
+    wire [7:0] reg_prng_out;
+    register reg_prng (
+    .clk(clk),
+    .rst(reset),
+    .ld(prng_done),
+    .in(M_rnd),
+    .out(reg_prng_out)
+    );
+
+    
+    wire [7:0] F_out;
+    F_function_8bit F_inst (.B(B), .C(C), .D(D),.i(count), .F(F_out));
+
+    // --- Adder1 ---
+    wire [7:0] adder1_out;
+    wire       cout4;
+
+    adder4x8 adder1_inst (
+        .a(F_out),
+        .b(A),
+        .c(reg_prng_out),
+        .d(constant[count]),
+        .sum(adder1_out),
+        .cout(cout4)
+    );
+
+
+    register reg_adder1 (
+    .clk(clk),
+    .rst(reset),
+    .ld(stage_sel==1 && stage_load),
+    .in(adder1_out),
+    .out(reg_adder1_out)
+    );
+
+
+    // --- multiplier ---
+    wire [7:0] mult;
+    mult4x4 mult1(.A(reg_adder1_out[3:0]) ,.B(reg_adder1_out[7:4]) ,.P(mult));
+
+    
+    adder_n #(.N(8)) adder2 (
+    .a(mult),// ورودی اول
+    .b(B),           // ورودی دوم
+    .cin(1'b0),      // ورودی جمع با حمل صفر
+    .sum(adder2_out),// خروجی جمع
+    .cout()          // فعلاً خروجی carry لازم نداری، خالی گذاشتم
+    );
+
+
+    wire [7:0] reg_adder2_out;
+    register reg_adder2 (
+    .clk(clk),
+    .rst(reset),
+    .ld(stage_sel==3 && stage_load),
+    .in(adder2_out),
+    .out(reg_multi_out)
+    );
+
+    
+    assign data_out = {A, B, C, D};
+endmodule

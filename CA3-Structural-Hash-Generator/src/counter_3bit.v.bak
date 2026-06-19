@@ -1,0 +1,118 @@
+module counter_3bit(
+    input  wire clk,
+    input  wire reset,
+    input  wire enable,
+    output wire [2:0] out,
+    output wire done
+);
+
+    wire q0, q1, q2;
+    assign out = {q2, q1, q0};
+    wire rst;
+  
+  
+    s2 s2_q0 (
+        .D00(1'b0), .D01(1'b1), .D10(1'b1), .D11(1'b0),
+        .A1(1'b0), .B1(q0),
+        .A0(1'b1), .B0(enable),
+        .clr(rst),
+        .clk(clk),
+        .out(q0)
+    );
+
+    s2 s2_q1 (
+        .D00(1'b0), .D01(1'b1), .D10(1'b1), .D11(1'b0),
+        .A1(1'b0), .B1(q1),
+        .A0(q0), .B0(enable),
+        .clr(rst),
+        .clk(clk),
+        .out(q1)
+    );
+
+   
+    wire q0_and_q1;
+    and_gate #(1) AND_Q0_Q1 (.a({q0}), .b({q1}), .and_out({q0_and_q1}));
+
+    s2 s2_q2 (
+        .D00(1'b0), .D01(1'b1), .D10(1'b1), .D11(1'b0),
+        .A1(1'b0), .B1(q2),
+        .A0(q0_and_q1), .B0(enable),
+        .clr(rst),
+        .clk(clk),
+        .out(q2)
+    );
+
+        
+    wire not_q1;
+    not_gate #(1) NOT_Q1 (.a({q1}), .not_out({not_q1}));
+
+    wire done_comb1;
+    and_gate #(1) AND_DONE1 (.a({q2}), .b({not_q1}), .and_out({done_comb1}));
+
+    wire done_comb;
+    and_gate #(1) AND_DONE2 (.a({done_comb1}), .b({q0}), .and_out({done_comb}));
+    // done_comb == (q2 & ~q1 & q0)   <-- ??? ?? ???????? ?? ????? ???
+
+    assign done = done_comb; // ????? ?????: ???? ?????? ?? out==5 ???? ?????? ???
+
+    
+    wire done_reg;
+    FDCP done_ff (
+     .clk(clk),
+     .CLR(reset),   
+     .D(done_comb),
+     .Q(done_reg)
+    );
+
+    wire rst_internal;
+    or_gate #(1) OR_RST (.a(reset), .b(done_reg), .or_out(rst_internal));
+    assign rst = rst_internal;
+
+endmodule
+
+`timescale 1ns/1ps
+
+module tb_counter_3bit;
+
+    reg clk;
+    reg reset;
+    reg enable;
+    wire [2:0] out;
+    wire done;
+
+    counter_3bit uut (
+        .clk(clk),
+        .reset(reset),
+        .enable(enable),
+        .out(out),
+        .done(done)
+    );
+
+    initial begin
+        clk = 0;
+        forever #5 clk = ~clk; 10ns
+    end
+
+    initial begin
+        reset  = 1;
+        enable = 0;
+        #12;  
+        reset  = 0;
+        enable = 1;
+
+        #100;
+
+        enable = 0;  
+        #20;
+        enable = 1;  
+        #100;
+
+        $finish;
+    end
+
+    initial begin
+        $display("Time\tclk\treset\tenable\tout\tdone");
+        $monitor("%0t\t%b\t%b\t%b\t%b\t%b", $time, clk, reset, enable, out, done);
+    end
+
+endmodule

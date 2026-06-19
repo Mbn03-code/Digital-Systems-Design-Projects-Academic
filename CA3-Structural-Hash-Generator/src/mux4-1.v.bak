@@ -1,0 +1,52 @@
+module mux4 #(parameter N = 1) (
+    input  wire [N-1:0] a,
+    input  wire [N-1:0] b,
+    input  wire [N-1:0] c,
+    input  wire [N-1:0] d,
+    input  wire  sel1,
+    input  wire  sel2,
+    output wire [N-1:0] mux4_out
+);
+    genvar i;
+    generate
+        for (i = 0; i < N; i = i + 1) begin : mux4_gen
+            C2 mux4_gate (
+                .D0(a[i]),
+                .D1(b[i]),
+                .D2(c[i]),
+                .D3(d[i]),
+                .A1(1'b0),
+                .B1(sel1[i]),
+                .A0(1'b1),
+                .B0(sel2[i]),
+                .out(mux4_out[i])
+            );
+        end
+    endgenerate
+endmodule
+
+module tb_mux4_5bit;
+    reg  [4:0] a, b, c, d;
+    reg        sel1, sel2;
+    wire [4:0] out;
+
+    mux4 #(5) dut (.a(a), .b(b), .c(c), .d(d), .sel1(sel1), .sel2(sel2), .mux4_out(out));
+
+    initial begin
+        $monitor("t=%0t | a=%b b=%b c=%b d=%b | sel1=%b sel2=%b -> out=%b",
+                  $time, a, b, c, d, sel1, sel2, out);
+
+        a = 5'b00001;
+        b = 5'b00110;
+        c = 5'b10101;
+        d = 5'b11100;
+
+        // حالت‌های انتخاب:
+        sel1=0; sel2=0; #10;   // انتخاب a
+        sel1=0; sel2=1; #10;   // انتخاب b
+        sel1=1; sel2=0; #10;   // انتخاب c
+        sel1=1; sel2=1; #10;   // انتخاب d
+
+        $finish;
+    end
+endmodule

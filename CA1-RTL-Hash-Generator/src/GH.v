@@ -1,0 +1,100 @@
+module GH_top(
+    input  wire        clk,
+    input  wire        reset,
+    input  wire        start,
+    input  wire [127:0] data_in,
+    output wire [127:0] data_out,
+    output wire        done
+);
+    
+    wire [5:0] count;
+    wire count_done;
+    wire count_enable;
+
+    
+    wire start_prng, stage_load, load_init; 
+    wire [2:0] stage_sel;
+    wire prng_done;
+
+
+
+    counter #(.WIDTH(6) , .MAX_VALUE(63))
+    counter_ins(
+        .clk(clk),
+        .reset(reset),
+        .enable(count_enable),
+        .count(count),
+        .done(count_done)
+    );
+    
+
+
+    GH_datapath datapath (
+        .clk(clk),
+        .reset(reset),
+        .data_in(data_in),
+        .count(count),
+        .start_prng(start_prng),
+        .prng_done(prng_done),
+        .stage_load(stage_load),
+        .stage_sel(stage_sel),
+        .load_init(load_init),   
+        .data_out(data_out)
+    );
+
+
+    GH_controller controller (
+        .clk(clk),
+        .reset(reset),
+        .start(start),
+        .prng_done(prng_done),
+        .count(count),
+        .start_prng(start_prng),
+        .stage_load(stage_load),
+        .stage_sel(stage_sel),
+        .load_init(load_init),   
+        .count_enable(count_enable),
+        .done(done)
+    );
+endmodule
+
+module tb_GH_TOP;
+
+    reg clk;
+    reg reset;
+    reg start;
+    reg [127:0] data_in;
+    wire [127:0] data_out;
+    wire done;
+
+    GH_top uut (
+        .clk(clk),
+        .reset(reset),
+        .start(start),
+        .data_in(data_in),
+        .data_out(data_out),
+        .done(done)
+    );
+
+    always #5 clk = ~clk;
+
+    initial begin
+
+        clk   = 0;
+        reset = 1;
+        start = 0;
+        data_in = 128'h41a801a8e81df62b14a661b85c97bf45;
+
+        #20 reset = 0;
+        #10 start = 1;
+        #10 start = 0;
+
+        wait(done);
+        #20;
+        $display("? Final hash = %h", data_out);
+        $finish;
+    end
+
+endmodule
+
+

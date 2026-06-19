@@ -1,0 +1,1099 @@
+m255
+K3
+13
+cModel Technology
+dC:\Users\Notebook\Desktop\tehUni\CAD\midterm
+vadder4x8
+IgL`L0hL_QagCI5SWiZAeS1
+V6Om;OEKMEL4J3fHLkh=K92
+Z0 dC:\Users\Notebook\Desktop\tehUni\CAD\CA3\FPGA_src
+Z1 w1764863311
+Z2 8C:/Users/Notebook/Desktop/tehUni/CAD/CA3/FPGA_src/fulladder4x8.v
+Z3 FC:/Users/Notebook/Desktop/tehUni/CAD/CA3/FPGA_src/fulladder4x8.v
+L0 1
+Z4 OV;L;6.3g_p1;37
+r1
+31
+Z5 o-work work -nocovercells -O0
+!s85 0
+vadder4x8_tb
+IGNA<W<Y7J]C]CmPI0eHdK1
+Vbg:a5SEMiY88OiZa<z6X<0
+Z6 dC:\Users\Notebook\Desktop\tehUni\CAD\CA3\FPGA_src
+R1
+R2
+R3
+L0 38
+R4
+r1
+31
+R5
+!s85 0
+vadder_n
+I3=ZceiW8g5]K>cHPUOm2j3
+Vij[=Wn3QZm3>T5SfDf^O`0
+R6
+Z7 w1764922235
+Z8 8C:/Users/Notebook/Desktop/tehUni/CAD/CA3/FPGA_src/fulladderNbit.v
+Z9 FC:/Users/Notebook/Desktop/tehUni/CAD/CA3/FPGA_src/fulladderNbit.v
+L0 1
+R4
+r1
+31
+R5
+!s85 0
+vadder_n_tb
+II1BFlm_o]WLeMoCnWULkO3
+VA^:Idm?O<;O?AS7_zEM143
+R6
+R7
+R8
+R9
+L0 31
+R4
+r1
+31
+R5
+!s85 0
+vand_gate
+IUnU25Ejdgf<0>Egi8dFAB3
+V?UPl]i4_@J2bIVO^id[0>2
+R6
+Z10 w1764878768
+Z11 8C:/Users/Notebook/Desktop/tehUni/CAD/CA3/FPGA_src/and.v
+Z12 FC:/Users/Notebook/Desktop/tehUni/CAD/CA3/FPGA_src/and.v
+L0 1
+R4
+r1
+31
+R5
+!s85 0
+vand_gate3
+IkJULYR<5Gm4gK4AE;I5383
+VThM^n@@;DRcSkJ<A1;E>83
+R6
+w1764903837
+8C:/Users/Notebook/Desktop/tehUni/CAD/CA3/FPGA_src/and3.v
+FC:/Users/Notebook/Desktop/tehUni/CAD/CA3/FPGA_src/and3.v
+L0 1
+R4
+r1
+31
+R5
+!s85 0
+vand_gate_tb
+IEIP=LD0l[oWnDmBUDH]RR2
+VB7Fd>f5l``CMJaUOkic<F3
+R6
+R10
+R11
+R12
+L0 24
+R4
+r1
+31
+R5
+!s85 0
+vC1
+I?PiK>ICcN:S_YPiRAehzV3
+V6B<3`1cbm>>YzNl`aZ<kI3
+R6
+Z13 w1764833687
+Z14 8C:/Users/Notebook/Desktop/tehUni/CAD/CA3/FPGA_src/c1.v
+Z15 FC:/Users/Notebook/Desktop/tehUni/CAD/CA3/FPGA_src/c1.v
+L0 1
+R4
+r1
+31
+R5
+n@c1
+!s85 0
+vc1
+IgF<h3@GK7^0X]bB>hVN392
+V^O5h^Nc1GC<f1Cf<KU_EX1
+R6
+Z16 w1764944484
+Z17 8C:/Users/Notebook/Desktop/tehUni/CAD/CA3/FPGA_src/modules.v
+Z18 FC:/Users/Notebook/Desktop/tehUni/CAD/CA3/FPGA_src/modules.v
+L0 1
+R4
+r1
+!s85 0
+31
+R5
+vC1_tb
+I0<2Y]i81KRJ>fIL3L=7g?0
+VW<O1OQj`=BUJn=NzDm7O81
+R6
+R13
+R14
+R15
+L0 14
+R4
+r1
+31
+R5
+n@c1_tb
+!s85 0
+vC2
+I^[Y<>O=mH:SKQXKVT8RSN1
+VjD4@:Z?0Jd540T7z9h3V40
+R6
+Z19 w1764833719
+Z20 8C:/Users/Notebook/Desktop/tehUni/CAD/CA3/FPGA_src/c2.v
+Z21 FC:/Users/Notebook/Desktop/tehUni/CAD/CA3/FPGA_src/c2.v
+L0 1
+R4
+r1
+31
+R5
+n@c2
+!s85 0
+vc2
+Ih]LB;HBi?]WEZ;0hPoEY;3
+V];QL6UV[46U`aQ=zKeaJX1
+R6
+R16
+R17
+R18
+L0 11
+R4
+r1
+!s85 0
+31
+R5
+vC2_tb
+IH75nON5JK1JY0]:<Kg`Va2
+V5L[KzoG;BMk2__@R@=R>V2
+R6
+R19
+R20
+R21
+L0 18
+R4
+r1
+31
+R5
+n@c2_tb
+!s85 0
+vcounter_3
+I:3?0<V?i7@e89Kob9>nnQ3
+VA]YGlk`ohZHU3?5PUlC=^2
+R6
+Z22 w1764959621
+Z23 8C:/Users/Notebook/Desktop/tehUni/CAD/CA3/FPGA_src/counter_3bit.v
+Z24 FC:/Users/Notebook/Desktop/tehUni/CAD/CA3/FPGA_src/counter_3bit.v
+L0 1
+R4
+r1
+31
+R5
+!s85 0
+vcounter_3bit
+IFP>FM0CSR[5`zolAB1hlQ0
+V06Z]PJ]dAWIdL8KOf_75m3
+R6
+Z25 w1764964033
+R23
+R24
+L0 1
+R4
+r1
+31
+R5
+!s85 0
+vcounter_3bit_s2
+IR]UzRN<[46W_OT>UlV@d51
+VPe^C7B3SA@o06m^k3DCj23
+R6
+Z26 w1764959411
+R23
+R24
+L0 1
+R4
+r1
+31
+R5
+!s85 0
+vcounter_3bit_structural
+IgaJBh5RHj_<WU^>F312Z;3
+VJ;a5ONn7E_=ooJ<KeU;g03
+R6
+w1764944732
+R23
+R24
+L0 5
+R4
+r1
+31
+R5
+!s85 0
+vcounter_3bit_tb
+IGhASnE]>KWRKbmI2h=M7G3
+VfFZ>nN6G]_K7K3OZ7a[fS2
+R6
+w1764943728
+R23
+R24
+L0 27
+R4
+r1
+31
+R5
+!s85 0
+vcounter_6bit
+IHW[@oEnRG8AjmHQ<25YWL2
+V=TH42BdPYV[T?5KW4F;a`3
+R6
+Z27 w1765188826
+Z28 8C:/Users/Notebook/Desktop/tehUni/CAD/CA3/FPGA_src/counter_6bit.v
+Z29 FC:/Users/Notebook/Desktop/tehUni/CAD/CA3/FPGA_src/counter_6bit.v
+L0 1
+R4
+r1
+31
+R5
+!s85 0
+vcounter_6bit_tb
+I9Gff>d9ShmZW`?LB4fH740
+V0<1o<`31_K<3[[4PN3o[K0
+R6
+R27
+R28
+R29
+L0 84
+R4
+r1
+31
+R5
+!s85 0
+vF_function_8bit
+IACYdb`FRimV^bP:NOLT>V2
+V19H8MXOzd`a3YFf49639a2
+R6
+Z30 w1764863295
+Z31 8C:/Users/Notebook/Desktop/tehUni/CAD/CA3/FPGA_src/F_function.v
+Z32 FC:/Users/Notebook/Desktop/tehUni/CAD/CA3/FPGA_src/F_function.v
+L0 1
+R4
+r1
+31
+R5
+n@f_function_8bit
+!s85 0
+vF_function_8bit_tb
+IPI`YK>8hiTRW3Ajg3`^9O2
+VgXKK^z]^oTKP@2LFgOlJa2
+R6
+R30
+R31
+R32
+L0 46
+R4
+r1
+31
+R5
+n@f_function_8bit_tb
+!s85 0
+vFDCP
+I]5FALn7iTDhmC22jaNIoP0
+VccR<?<l9ZCTBHID6GCJnS3
+R6
+R16
+R17
+R18
+L0 39
+R4
+r1
+!s85 0
+31
+R5
+n@f@d@c@p
+vfulladder1bit
+I3<6AA:2<jTMYYNcNmL9XF1
+V[_91>do]XcGXaA?K1dN0d2
+R6
+Z33 w1764963071
+Z34 8C:/Users/Notebook/Desktop/tehUni/CAD/CA3/FPGA_src/fullAdder1bit.v
+Z35 FC:/Users/Notebook/Desktop/tehUni/CAD/CA3/FPGA_src/fullAdder1bit.v
+L0 1
+R4
+r1
+31
+R5
+!s85 0
+vfulladder1bit_tb
+IiiP<a?fMSfgH]A6?=7JQL2
+V6Jh9zM98k0enIS15hk1lP0
+R6
+R33
+R34
+R35
+L0 8
+R4
+r1
+31
+R5
+!s85 0
+vGH_controller
+Z36 Mx1 6 sv_std 3 std
+Z37 DXx6 sv_std 3 std 0 22 WnQ=;W1X^o9K1PIQTgInR3
+IIT:D@NbG>E:V2`[JkI9Io3
+VDGmN1eQR^c9]l17kG5eXd3
+S1
+R6
+Z38 w1765258618
+Z39 8C:/Users/Notebook/Desktop/tehUni/CAD/CA3/FPGA_src/GH_controller.v
+Z40 FC:/Users/Notebook/Desktop/tehUni/CAD/CA3/FPGA_src/GH_controller.v
+L0 1
+R4
+r1
+31
+Z41 o-work work -sv -nocovercells -O0
+n@g@h_controller
+!s85 0
+vGH_controller_tb
+R36
+R37
+I2<6RllmjMzH[3?WMLo:ed1
+VYi1_z>XNn7C9glLjlUhZ_0
+S1
+R6
+R38
+R39
+R40
+L0 84
+R4
+r1
+31
+R41
+n@g@h_controller_tb
+!s85 0
+vGH_datapath
+R36
+R37
+I`H:aX]>m:9l3CTLz^ggoJ1
+V5Y8O:;gMBV=EgQ6Ha<gdo0
+S1
+R6
+Z42 w1764958768
+Z43 8C:/Users/Notebook/Desktop/tehUni/CAD/CA3/FPGA_src/GH_datapath.v
+Z44 FC:/Users/Notebook/Desktop/tehUni/CAD/CA3/FPGA_src/GH_datapath.v
+L0 1
+R4
+r1
+31
+R41
+n@g@h_datapath
+!s85 0
+vGH_datapath_tb
+R36
+R37
+Iz:A=i11@I:P28hg;T8hKR1
+VGNLM7PhVHXYfE_313=Xnb2
+S1
+R6
+R42
+R43
+R44
+L0 121
+R4
+r1
+31
+R41
+n@g@h_datapath_tb
+!s85 0
+vGH_top
+I:LhX41XR?comoS=6`WfF10
+V[_M4fObTz6h?ieCi=ahGM1
+R6
+Z45 w1765258158
+Z46 8C:/Users/Notebook/Desktop/tehUni/CAD/CA3/FPGA_src/GH.v
+Z47 FC:/Users/Notebook/Desktop/tehUni/CAD/CA3/FPGA_src/GH.v
+L0 1
+R4
+r1
+31
+R5
+n@g@h_top
+!s85 0
+vGH_top_tb
+I[D2UYhl_[_8[?B`PoO=lN2
+VY1_k^dY;^oKbc@F39:TEl0
+R6
+R45
+R46
+R47
+L0 58
+R4
+r1
+31
+R5
+n@g@h_top_tb
+!s85 0
+vmult4x4
+INF@[baH?GcZI9BgJ=T4V=0
+Vaa=dZfzhl=]H7Zn_cL41f1
+R6
+Z48 w1764863351
+Z49 8C:/Users/Notebook/Desktop/tehUni/CAD/CA3/FPGA_src/multiplier4-4.v
+Z50 FC:/Users/Notebook/Desktop/tehUni/CAD/CA3/FPGA_src/multiplier4-4.v
+L0 1
+R4
+r1
+31
+R5
+!s85 0
+vmult4x4_tb
+I=gn33hH?96nm3AmVFaSWP3
+Va6ZCz@K9ZZSn1Y>^^JgQ83
+R6
+R48
+R49
+R50
+L0 67
+R4
+r1
+31
+R5
+!s85 0
+vmux2
+IiLYJF9Fm>mb6d33<=0@aS0
+Vk>;RB87J1Mie?T0=gADcn1
+R6
+Z51 w1764944352
+Z52 8C:/Users/Notebook/Desktop/tehUni/CAD/CA3/FPGA_src/mux2to1.v
+Z53 FC:/Users/Notebook/Desktop/tehUni/CAD/CA3/FPGA_src/mux2to1.v
+L0 1
+R4
+r1
+31
+R5
+!s85 0
+vmux2_tb
+I8gO>jM0GPIZ25ohOmMzU21
+V_I?[5HnX@4AG3KQ4kg1TC1
+R6
+R51
+R52
+R53
+L0 26
+R4
+r1
+31
+R5
+!s85 0
+vmux2to1
+Ild7`[`;OHKE;?E=c=Ld^=0
+V@BIl;mQaAZY_W31g20T1M1
+R6
+w1764493798
+R52
+R53
+L0 1
+R4
+r1
+31
+R5
+!s85 0
+vmux4
+InE@D<ggNWgn3DZU6b_b453
+V?z:D74Y@fZmgacXQJi<G20
+R6
+Z54 w1764879784
+Z55 8C:/Users/Notebook/Desktop/tehUni/CAD/CA3/FPGA_src/mux4-1.v
+Z56 FC:/Users/Notebook/Desktop/tehUni/CAD/CA3/FPGA_src/mux4-1.v
+L0 1
+R4
+r1
+31
+R5
+!s85 0
+vmux4_tb
+IO?_mkhTI0]Eb5@3jEgfS_2
+VB]C>BGJg;0H1iMJYLoBcB2
+R6
+R54
+R55
+R56
+L0 28
+R4
+r1
+31
+R5
+!s85 0
+vnot_gate
+I:iGa5eFkn>[Y@PzC`KTDd0
+V@X7RXmGGF`:G@lHLh:XBj1
+R6
+Z57 w1764879812
+Z58 8C:/Users/Notebook/Desktop/tehUni/CAD/CA3/FPGA_src/not.v
+Z59 FC:/Users/Notebook/Desktop/tehUni/CAD/CA3/FPGA_src/not.v
+L0 1
+R4
+r1
+31
+R5
+!s85 0
+vnot_gate_tb
+IET6jOBfVBV]`?Ul70Z[NC3
+Viim<29@0MB_RO9fL0f<[k3
+R6
+R57
+R58
+R59
+L0 23
+R4
+r1
+31
+R5
+!s85 0
+vor_gate
+IAESDAkMAl3cI_=[_D_<V62
+VhY@Jn1SeD=:FghoBi8iD21
+R6
+Z60 w1764879828
+Z61 8C:/Users/Notebook/Desktop/tehUni/CAD/CA3/FPGA_src/or.v
+Z62 FC:/Users/Notebook/Desktop/tehUni/CAD/CA3/FPGA_src/or.v
+L0 1
+R4
+r1
+31
+R5
+!s85 0
+vor_gate_tb
+IHXC7^_5SCIiQnD16lEXJk3
+VQ=5E8:U=D?mCB6Dcm=8mb0
+R6
+R60
+R61
+R62
+L0 29
+R4
+r1
+31
+R5
+!s85 0
+vPRNG
+I@QJ32C4:<nL2G4J_8`S^70
+VHY=_0FnnRU0llI>L9WaGK2
+R6
+Z63 w1764911450
+Z64 8C:/Users/Notebook/Desktop/tehUni/CAD/CA3/FPGA_src/PRNG-TOP.v
+Z65 FC:/Users/Notebook/Desktop/tehUni/CAD/CA3/FPGA_src/PRNG-TOP.v
+L0 1
+R4
+r1
+31
+R5
+n@p@r@n@g
+!s85 0
+vPRNG_controller
+Ig:;J2V@D7ncAn:^TD:^?g3
+V>h[g0CNTiJj77_eOUkAJD2
+R6
+Z66 w1764879938
+Z67 8C:/Users/Notebook/Desktop/tehUni/CAD/CA3/FPGA_src/PRNG_controller.v
+Z68 FC:/Users/Notebook/Desktop/tehUni/CAD/CA3/FPGA_src/PRNG_controller.v
+L0 1
+R4
+r1
+31
+R5
+n@p@r@n@g_controller
+!s85 0
+vPRNG_controller_tb
+IM;Cj0O^3jJP9d]H?zP2G[0
+VZ<TInQdZ0<eiMFG`0f@B42
+R6
+R66
+R67
+R68
+L0 80
+R4
+r1
+31
+R5
+n@p@r@n@g_controller_tb
+!s85 0
+vPRNG_Datapath
+IOdQK@ULWRn[3U2Ia?eK833
+Vd[OJ7X4^;1YFZCQTmznWP1
+R6
+Z69 w1764960184
+Z70 8C:/Users/Notebook/Desktop/tehUni/CAD/CA3/FPGA_src/PRNG_datapath.v
+Z71 FC:/Users/Notebook/Desktop/tehUni/CAD/CA3/FPGA_src/PRNG_datapath.v
+L0 1
+R4
+r1
+31
+R5
+n@p@r@n@g_@datapath
+!s85 0
+vPRNG_Datapath_tb
+IW]B5e;:b:_HX6i?M1j9Wz0
+VV16O7CR=O=@N2hWM]EKm[2
+R6
+R69
+R70
+R71
+L0 53
+R4
+r1
+31
+R5
+n@p@r@n@g_@datapath_tb
+!s85 0
+vPRNG_tb
+Ih[YPV0R7ng@ecf1AF:7V71
+V3N4a>z08ncW6fHI:RDdjY3
+R6
+R63
+R64
+R65
+L0 42
+R4
+r1
+31
+R5
+n@p@r@n@g_tb
+!s85 0
+vregfile4x8_parallel
+I;YBZ]<_WhO:HhNLj]iiWh2
+V]z1Tme?b>n=URGfImfkhi1
+R6
+Z72 w1764863446
+Z73 8C:/Users/Notebook/Desktop/tehUni/CAD/CA3/FPGA_src/registerFile.v
+Z74 FC:/Users/Notebook/Desktop/tehUni/CAD/CA3/FPGA_src/registerFile.v
+L0 1
+R4
+r1
+31
+R5
+!s85 0
+vregfile4x8_parallel_tb
+Ik8Tj:GViKKjSD?L:En`_62
+VE<X0Xk6XXW?XLzCoT0mmX2
+R6
+R72
+R73
+R74
+L0 57
+R4
+r1
+31
+R5
+!s85 0
+vregister
+I>GXE^UcOY=IFFX19_<PT23
+VUMSL:98W@>l?h?[_=IC=W0
+R6
+Z75 w1764879997
+Z76 8C:/Users/Notebook/Desktop/tehUni/CAD/CA3/FPGA_src/register.v
+Z77 FC:/Users/Notebook/Desktop/tehUni/CAD/CA3/FPGA_src/register.v
+L0 1
+R4
+r1
+31
+R5
+!s85 0
+vregister_tb
+I[0;8ZD13HS:_0Lb6aQm:52
+VPzo]z<>9V8[Ijo<]RZF=P0
+R6
+R75
+R76
+R77
+L0 33
+R4
+r1
+31
+R5
+!s85 0
+vS1
+IMQ8UQJlh1^_`0EdM1S=Q21
+V[Y9ADXLCDX6@TD9GIaYaE0
+R6
+Z78 w1764835697
+Z79 8C:/Users/Notebook/Desktop/tehUni/CAD/CA3/FPGA_src/s1.v
+Z80 FC:/Users/Notebook/Desktop/tehUni/CAD/CA3/FPGA_src/s1.v
+L0 1
+R4
+r1
+31
+R5
+n@s1
+!s85 0
+vs1
+Iz2i<Ra7m1aZnoJh_8dkJ:2
+V=OL7XPg6RPK>ZG:JCMd:z1
+R6
+R16
+R17
+R18
+L0 49
+R4
+r1
+!s85 0
+31
+R5
+vS2
+IAoTEEYMM]1jVN7<ISZ27D1
+V4`z0fMEP;[@CW>C?g0KMV0
+R6
+Z81 w1764835724
+Z82 8C:/Users/Notebook/Desktop/tehUni/CAD/CA3/FPGA_src/s2.v
+Z83 FC:/Users/Notebook/Desktop/tehUni/CAD/CA3/FPGA_src/s2.v
+L0 1
+R4
+r1
+31
+R5
+n@s2
+!s85 0
+vs2
+IF[;9QJf2HaLF1K0O>3Fm_2
+V3<Dmh[i:]i@QzIhbaQ1a^3
+R6
+R16
+R17
+R18
+L0 64
+R4
+r1
+!s85 0
+31
+R5
+vshift_register_6
+Inb4h_:Jo1S]3I<mK_:gci2
+V:1Kof8n1m^3n[OWG1l2ZU0
+R6
+Z84 w1764963889
+Z85 8C:/Users/Notebook/Desktop/tehUni/CAD/CA3/FPGA_src/shiftRegister.v
+Z86 FC:/Users/Notebook/Desktop/tehUni/CAD/CA3/FPGA_src/shiftRegister.v
+L0 1
+R4
+r1
+31
+R5
+!s85 0
+vshift_register_6_tb
+I1i6W?egP9A`6jnaS>lHDF2
+V7Z^Z:`aD6O7N4@UbHNoHJ0
+R6
+w1764780844
+R85
+R86
+L0 41
+R4
+r1
+31
+R5
+!s85 0
+vtb_C1
+Ib2L[IbJAIOMW1^ZGVo=B23
+V2=o<XNKi@XDFAJPUJW@ja3
+R6
+w1764509863
+R14
+R15
+L0 15
+R4
+r1
+31
+R5
+ntb_@c1
+!s85 0
+vtb_C2
+IMGo8B]6gj_lI]Q7CcbzQA0
+VmaElD0oU=304G;bUdL3fS0
+R6
+w1764510843
+R20
+R21
+L0 19
+R4
+r1
+31
+R5
+ntb_@c2
+!s85 0
+vtb_counter_3
+IGDoL=dUNJm1@bdSK1<nOT1
+VacLQGb6<SFkjjb^:1>2aN2
+R6
+R22
+R23
+R24
+L0 75
+R4
+r1
+31
+R5
+!s85 0
+vtb_counter_3bit
+I^f]=4VF4eMk^TlD4eZmaI2
+VJ[_X@Cl[m9DBO1N7Oe`WW0
+R6
+R25
+R23
+R24
+L0 75
+R4
+r1
+31
+R5
+!s85 0
+vtb_counter_3bit_s2
+IlXL^UKfUN:F9_GC92@0`_3
+VK:JM@CZL^E7Y9z]_Yg_?N2
+R6
+R26
+R23
+R24
+L0 75
+R4
+r1
+31
+R5
+!s85 0
+vtb_F_function_8bit
+ICG;mgNkIgUJiC9TzbBfHN0
+VI=Acd=iLoda68DQF2V_F;3
+R6
+w1764664544
+R31
+R32
+L0 49
+R4
+r1
+31
+R5
+ntb_@f_function_8bit
+!s85 0
+vtb_gates
+IE>7Al3JABXAS8Y25ZkTlK0
+VOI2blm>L]4UiLegDfO[F>0
+R6
+w1764512263
+8C:/Users/Notebook/Desktop/tehUni/CAD/CA3/FPGA_src/tb_gates.v
+FC:/Users/Notebook/Desktop/tehUni/CAD/CA3/FPGA_src/tb_gates.v
+L0 2
+R4
+r1
+31
+R5
+!s85 0
+vtb_GH_TOP
+I5QUlg<OM4[Z6=38VT?8;d1
+VfEkE1Az?l>=FJ@9g2LzVz3
+R6
+w1764821680
+R46
+R47
+L0 58
+R4
+r1
+31
+R5
+ntb_@g@h_@t@o@p
+!s85 0
+vtb_mux2_5bit
+IcPEUG7gH9dR_ibGzh@dKM3
+VYD2n0E]<FDJ4kE`PY7]6C1
+R6
+w1764822211
+R52
+R53
+L0 26
+R4
+r1
+31
+R5
+!s85 0
+vtb_mux4_5bit
+Ib6jM=OY?X36bn_^[VPG4g1
+VZ;:7NEJI2iEF`E`i9NaN<0
+R6
+w1764822243
+R55
+R56
+L0 28
+R4
+r1
+31
+R5
+!s85 0
+vtb_PRNG_controller
+IWQ6S`7PDMKF@HVB@44GkW0
+VWg>3NmGKk=GaO@=5k329l2
+R6
+w1764705909
+R67
+R68
+L0 85
+R4
+r1
+31
+R5
+ntb_@p@r@n@g_controller
+!s85 0
+vtb_S1
+Ik8M[aT>dbTRjm=X>i>S;L1
+V<[k333GE:D[S>[0GDN70h2
+R6
+R78
+R79
+R80
+L0 27
+R4
+r1
+31
+R5
+ntb_@s1
+!s85 0
+vtb_S2
+IP3?oFT0Gn=4gHElXY8kQa3
+VeFM_EzAQB6lY@UjYSH0GJ2
+R6
+R81
+R82
+R83
+L0 26
+R4
+r1
+31
+R5
+ntb_@s2
+!s85 0
+vtb_shift6
+IXNzUEL^dQoLQdHY44ojKJ0
+V0WLVLcG[bl[fnk6RM8aSE2
+R6
+w1764710565
+R85
+R86
+L0 39
+R4
+r1
+31
+R5
+!s85 0
+vtb_shift_register_6
+ILS3gMQ=F`ZD<mbZcWEeAZ2
+Vi:bE@2DL4nN2Y5gQJ6=UT1
+R6
+R84
+R85
+R86
+L0 40
+R4
+r1
+31
+R5
+!s85 0
+vtb_xnor_gate
+I:Qmf1V1NAXz0gj<l6HhoH1
+V@@IMdLI894QBXa[c:8zIl3
+R6
+Z87 w1764863491
+Z88 8C:/Users/Notebook/Desktop/tehUni/CAD/CA3/FPGA_src/xnor.v
+Z89 FC:/Users/Notebook/Desktop/tehUni/CAD/CA3/FPGA_src/xnor.v
+L0 23
+R4
+r1
+31
+R5
+!s85 0
+vtb_xor_gate
+ISn0RmD=;]Ag9P_:LFa2<g2
+V3VF3i>c]AOfMjaQD6WfhN0
+R6
+Z90 w1764880088
+Z91 8C:/Users/Notebook/Desktop/tehUni/CAD/CA3/FPGA_src/xor.v
+Z92 FC:/Users/Notebook/Desktop/tehUni/CAD/CA3/FPGA_src/xor.v
+L0 25
+R4
+r1
+31
+R5
+!s85 0
+vtest_adder4x8
+I?LcB1dPankkH>NHQI]^Ma2
+VP=Enea[HU><_nJNMclB;d1
+R6
+w1764519644
+R2
+R3
+L0 44
+R4
+r1
+31
+R5
+!s85 0
+vtest_adder_n
+IXZ4lM^EV]F0e:liI96QI50
+VEWQXWaj59@P^BM>B0Bcez0
+R6
+w1764821921
+R8
+R9
+L0 30
+R4
+r1
+31
+R5
+!s85 0
+vtest_fulladder1bit
+I56g0=@>;W426IN8H=_md:3
+VDl0YDjlN0i7VdLBK7k:Ib3
+R6
+w1764520667
+R34
+R35
+L0 24
+R4
+r1
+31
+R5
+!s85 0
+vverifyTestBench
+I^h0^z6Sf9hBRBEEiIno2A0
+VB?iDeUb;2MYSWV:DmW<:Y3
+R6
+w1765293978
+8C:/Users/Notebook/Desktop/tehUni/CAD/CA3/FPGA_src/tb_top.v
+FC:/Users/Notebook/Desktop/tehUni/CAD/CA3/FPGA_src/tb_top.v
+L0 4
+R4
+r1
+31
+R5
+nverify@test@bench
+!s85 0
+vxnor_gate
+I=<BB=[XC7WQ=6PnF2AO:J1
+Vk?G1P12B29<nXCgH9gE?b2
+R6
+R87
+R88
+R89
+L0 1
+R4
+r1
+31
+R5
+!s85 0
+vxor_gate
+IC5hW3d[nT4zZehLW5RiT71
+V_eCGfO72<TIbVWFa]G[o=3
+R6
+R90
+R91
+R92
+L0 1
+R4
+r1
+31
+R5
+!s85 0

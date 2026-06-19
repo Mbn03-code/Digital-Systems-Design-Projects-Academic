@@ -1,0 +1,1092 @@
+# 0	0	1	0	000	0
+# 5000	1	1	0	000	0
+# 10000	0	1	0	000	0
+# 12000	0	0	1	000	0
+# 15000	1	0	1	001	1
+# 20000	0	0	1	001	1
+# 25000	1	0	1	010	1
+# 30000	0	0	1	010	1
+# 35000	1	0	1	011	1
+# 40000	0	0	1	011	1
+# 45000	1	0	1	100	1
+# 50000	0	0	1	100	1
+# 55000	1	0	1	101	1
+# 60000	0	0	1	101	1
+# 65000	1	0	1	110	0
+# 70000	0	0	1	110	0
+# 75000	1	0	1	111	1
+# 80000	0	0	1	111	1
+# 85000	1	0	1	000	1
+# 90000	0	0	1	000	1
+# 95000	1	0	1	001	1
+# 100000	0	0	1	001	1
+# 105000	1	0	1	010	1
+# 110000	0	0	1	010	1
+# 112000	0	0	0	010	1
+# 115000	1	0	0	010	1
+# 120000	0	0	0	010	1
+# 125000	1	0	0	010	1
+# 130000	0	0	0	010	1
+# 132000	0	0	1	010	1
+# 135000	1	0	1	011	1
+# 140000	0	0	1	011	1
+# 145000	1	0	1	100	1
+# 150000	0	0	1	100	1
+# 155000	1	0	1	101	1
+# 160000	0	0	1	101	1
+# 165000	1	0	1	110	0
+# 170000	0	0	1	110	0
+# 175000	1	0	1	111	1
+# 180000	0	0	1	111	1
+# 185000	1	0	1	000	1
+# 190000	0	0	1	000	1
+# 195000	1	0	1	001	1
+# 200000	0	0	1	001	1
+# 205000	1	0	1	010	1
+# 210000	0	0	1	010	1
+# 215000	1	0	1	011	1
+# 220000	0	0	1	011	1
+# 225000	1	0	1	100	1
+# 230000	0	0	1	100	1
+# ** Note: $finish    : C:/Users/Notebook/Desktop/tehUni/CAD/CA3/FPGA_src/counter_3bit.v(113)
+#    Time: 232 ns  Iteration: 0  Instance: /tb_counter_3
+# 1
+# Break in Module tb_counter_3 at C:/Users/Notebook/Desktop/tehUni/CAD/CA3/FPGA_src/counter_3bit.v line 113
+quit -sim
+# Compile of and.v was successful.
+# Compile of counter_6bit.v was successful.
+# Compile of F_function.v was successful.
+# Compile of fullAdder1bit.v was successful.
+# Compile of fulladder4x8.v was successful.
+# Compile of fulladderNbit.v was successful.
+# Compile of GH.v was successful.
+# Compile of GH_controller.v was successful.
+# Compile of GH_datapath.v was successful.
+# Compile of multiplier4-4.v was successful.
+# Compile of mux2to1.v was successful.
+# Compile of mux4-1.v was successful.
+# Compile of not.v was successful.
+# Compile of or.v was successful.
+# Compile of PRNG_controller.v was successful.
+# Compile of PRNG_datapath.v was successful.
+# Compile of PRNG-TOP.v was successful.
+# Compile of register.v was successful.
+# Compile of registerFile.v was successful.
+# Compile of shiftRegister.v was successful.
+# Compile of xnor.v was successful.
+# Compile of xor.v was successful.
+# Compile of modules.v was successful.
+# Compile of and3.v was successful.
+# Compile of counter_3bit.v was successful.
+# 25 compiles, 0 failed with no errors. 
+vsim work.tb_counter_3bit
+# vsim work.tb_counter_3bit 
+# Loading work.tb_counter_3bit
+# Loading work.counter_3bit
+# ** Warning: (vsim-3009) [TSCALE] - Module 'counter_3bit' does not have a `timescale directive in effect, but previous modules do.
+#         Region: /tb_counter_3bit/uut
+# Loading work.or_gate
+# ** Warning: (vsim-3009) [TSCALE] - Module 'or_gate' does not have a `timescale directive in effect, but previous modules do.
+#         Region: /tb_counter_3bit/uut/OR0
+# Loading work.s2
+# ** Warning: (vsim-3009) [TSCALE] - Module 's2' does not have a `timescale directive in effect, but previous modules do.
+#         Region: /tb_counter_3bit/uut/s2_q0
+# Loading work.FDCP
+# ** Warning: (vsim-3009) [TSCALE] - Module 'FDCP' does not have a `timescale directive in effect, but previous modules do.
+#         Region: /tb_counter_3bit/uut/s2_q0/ff
+# Loading work.and_gate
+# ** Warning: (vsim-3009) [TSCALE] - Module 'and_gate' does not have a `timescale directive in effect, but previous modules do.
+#         Region: /tb_counter_3bit/uut/AND_Q0_Q1
+# Loading work.not_gate
+# ** Warning: (vsim-3009) [TSCALE] - Module 'not_gate' does not have a `timescale directive in effect, but previous modules do.
+#         Region: /tb_counter_3bit/uut/NOT_Q1
+# Loading work.c1
+# ** Warning: (vsim-3009) [TSCALE] - Module 'c1' does not have a `timescale directive in effect, but previous modules do.
+#         Region: /tb_counter_3bit/uut/OR0/or_bit[0]/or_inst
+add wave sim:/tb_counter_3bit/uut/*
+run -all
+# (vsim-50) A call to system(c1.exe) returned error code '-1073740791'.
+# The logfile contains the following messages:
+# terminate called after throwing an instance of 'std::invalid_argument'
+#   what():  stoi
+# 
+# (vsim-50) A call to system(s2-s1.exe) returned error code '-1073740791'.
+# The logfile contains the following messages:
+# terminate called after throwing an instance of 'std::invalid_argument'
+#   what():  stoi
+# 
+# (vsim-50) A call to system(c1.exe) returned error code '-1073740791'.
+# The logfile contains the following messages:
+# terminate called after throwing an instance of 'std::invalid_argument'
+#   what():  stoi
+# 
+# (vsim-50) A call to system(s2-s1.exe) returned error code '-1073740791'.
+# The logfile contains the following messages:
+# terminate called after throwing an instance of 'std::invalid_argument'
+#   what():  stoi
+# 
+# (vsim-50) A call to system(c1.exe) returned error code '-1073740791'.
+# The logfile contains the following messages:
+# terminate called after throwing an instance of 'std::invalid_argument'
+#   what():  stoi
+# 
+# (vsim-50) A call to system(c1.exe) returned error code '-1073740791'.
+# The logfile contains the following messages:
+# terminate called after throwing an instance of 'std::invalid_argument'
+#   what():  stoi
+# 
+# (vsim-50) A call to system(s2-s1.exe) returned error code '-1073740791'.
+# The logfile contains the following messages:
+# terminate called after throwing an instance of 'std::invalid_argument'
+#   what():  stoi
+# 
+# (vsim-50) A call to system(c1.exe) returned error code '-1073740791'.
+# The logfile contains the following messages:
+# terminate called after throwing an instance of 'std::invalid_argument'
+#   what():  stoi
+# 
+# (vsim-50) A call to system(c1.exe) returned error code '-1073740791'.
+# The logfile contains the following messages:
+# terminate called after throwing an instance of 'std::invalid_argument'
+#   what():  stoi
+# 
+# (vsim-50) A call to system(c1.exe) returned error code '-1073740791'.
+# The logfile contains the following messages:
+# terminate called after throwing an instance of 'std::invalid_argument'
+#   what():  stoi
+# 
+# (vsim-50) A call to system(s2-s1.exe) returned error code '-1073740791'.
+# The logfile contains the following messages:
+# terminate called after throwing an instance of 'std::invalid_argument'
+#   what():  stoi
+# 
+# Time	clk	reset	enable	out	done
+# 0	0	1	0	000	0
+# 5000	1	1	0	000	0
+# 10000	0	1	0	000	0
+# 12000	0	0	1	000	0
+# 15000	1	0	1	001	1
+# 20000	0	0	1	001	1
+# 25000	1	0	1	010	1
+# 30000	0	0	1	010	1
+# 35000	1	0	1	011	1
+# 40000	0	0	1	011	1
+# 45000	1	0	1	100	1
+# 50000	0	0	1	100	1
+# 55000	1	0	1	101	1
+# 60000	0	0	1	101	1
+# 65000	1	0	1	110	0
+# 70000	0	0	1	110	0
+# 75000	1	0	1	111	1
+# 80000	0	0	1	111	1
+# 85000	1	0	1	000	1
+# 90000	0	0	1	000	1
+# 95000	1	0	1	001	1
+# 100000	0	0	1	001	1
+# 105000	1	0	1	010	1
+# 110000	0	0	1	010	1
+# 112000	0	0	0	010	1
+# 115000	1	0	0	010	1
+# 120000	0	0	0	010	1
+# 125000	1	0	0	010	1
+# 130000	0	0	0	010	1
+# 132000	0	0	1	010	1
+# 135000	1	0	1	011	1
+# 140000	0	0	1	011	1
+# 145000	1	0	1	100	1
+# 150000	0	0	1	100	1
+# 155000	1	0	1	101	1
+# 160000	0	0	1	101	1
+# 165000	1	0	1	110	0
+# 170000	0	0	1	110	0
+# 175000	1	0	1	111	1
+# 180000	0	0	1	111	1
+# 185000	1	0	1	000	1
+# 190000	0	0	1	000	1
+# 195000	1	0	1	001	1
+# 200000	0	0	1	001	1
+# 205000	1	0	1	010	1
+# 210000	0	0	1	010	1
+# 215000	1	0	1	011	1
+# 220000	0	0	1	011	1
+# 225000	1	0	1	100	1
+# 230000	0	0	1	100	1
+# ** Note: $finish    : C:/Users/Notebook/Desktop/tehUni/CAD/CA3/FPGA_src/counter_3bit.v(113)
+#    Time: 232 ns  Iteration: 0  Instance: /tb_counter_3bit
+# 1
+# Break in Module tb_counter_3bit at C:/Users/Notebook/Desktop/tehUni/CAD/CA3/FPGA_src/counter_3bit.v line 113
+quit -sim
+# Compile of and.v was successful.
+# Compile of counter_6bit.v was successful.
+# Compile of F_function.v was successful.
+# Compile of fullAdder1bit.v was successful.
+# Compile of fulladder4x8.v was successful.
+# Compile of fulladderNbit.v was successful.
+# Compile of GH.v was successful.
+# Compile of GH_controller.v was successful.
+# Compile of GH_datapath.v was successful.
+# Compile of multiplier4-4.v was successful.
+# Compile of mux2to1.v was successful.
+# Compile of mux4-1.v was successful.
+# Compile of not.v was successful.
+# Compile of or.v was successful.
+# Compile of PRNG_controller.v was successful.
+# Compile of PRNG_datapath.v was successful.
+# Compile of PRNG-TOP.v was successful.
+# Compile of register.v was successful.
+# Compile of registerFile.v was successful.
+# Compile of shiftRegister.v was successful.
+# Compile of xnor.v was successful.
+# Compile of xor.v was successful.
+# Compile of modules.v was successful.
+# Compile of and3.v was successful.
+# Compile of counter_3bit.v was successful.
+# 25 compiles, 0 failed with no errors. 
+vsim work.tb_counter_3bit
+# vsim work.tb_counter_3bit 
+# Loading work.tb_counter_3bit
+# Loading work.counter_3bit
+# ** Warning: (vsim-3009) [TSCALE] - Module 'counter_3bit' does not have a `timescale directive in effect, but previous modules do.
+#         Region: /tb_counter_3bit/uut
+# Loading work.or_gate
+# ** Warning: (vsim-3009) [TSCALE] - Module 'or_gate' does not have a `timescale directive in effect, but previous modules do.
+#         Region: /tb_counter_3bit/uut/OR0
+# Loading work.s2
+# ** Warning: (vsim-3009) [TSCALE] - Module 's2' does not have a `timescale directive in effect, but previous modules do.
+#         Region: /tb_counter_3bit/uut/s2_q0
+# Loading work.FDCP
+# ** Warning: (vsim-3009) [TSCALE] - Module 'FDCP' does not have a `timescale directive in effect, but previous modules do.
+#         Region: /tb_counter_3bit/uut/s2_q0/ff
+# Loading work.and_gate
+# ** Warning: (vsim-3009) [TSCALE] - Module 'and_gate' does not have a `timescale directive in effect, but previous modules do.
+#         Region: /tb_counter_3bit/uut/AND_Q0_Q1
+# Loading work.not_gate
+# ** Warning: (vsim-3009) [TSCALE] - Module 'not_gate' does not have a `timescale directive in effect, but previous modules do.
+#         Region: /tb_counter_3bit/uut/NOT_Q1
+# Loading work.c1
+# ** Warning: (vsim-3009) [TSCALE] - Module 'c1' does not have a `timescale directive in effect, but previous modules do.
+#         Region: /tb_counter_3bit/uut/OR0/or_bit[0]/or_inst
+add wave sim:/tb_counter_3bit/uut/*
+run -all
+# (vsim-50) A call to system(c1.exe) returned error code '-1073740791'.
+# The logfile contains the following messages:
+# terminate called after throwing an instance of 'std::invalid_argument'
+#   what():  stoi
+# 
+# (vsim-50) A call to system(s2-s1.exe) returned error code '-1073740791'.
+# The logfile contains the following messages:
+# terminate called after throwing an instance of 'std::invalid_argument'
+#   what():  stoi
+# 
+# (vsim-50) A call to system(c1.exe) returned error code '-1073740791'.
+# The logfile contains the following messages:
+# terminate called after throwing an instance of 'std::invalid_argument'
+#   what():  stoi
+# 
+# (vsim-50) A call to system(s2-s1.exe) returned error code '-1073740791'.
+# The logfile contains the following messages:
+# terminate called after throwing an instance of 'std::invalid_argument'
+#   what():  stoi
+# 
+# (vsim-50) A call to system(c1.exe) returned error code '-1073740791'.
+# The logfile contains the following messages:
+# terminate called after throwing an instance of 'std::invalid_argument'
+#   what():  stoi
+# 
+# (vsim-50) A call to system(c1.exe) returned error code '-1073740791'.
+# The logfile contains the following messages:
+# terminate called after throwing an instance of 'std::invalid_argument'
+#   what():  stoi
+# 
+# (vsim-50) A call to system(s2-s1.exe) returned error code '-1073740791'.
+# The logfile contains the following messages:
+# terminate called after throwing an instance of 'std::invalid_argument'
+#   what():  stoi
+# 
+# (vsim-50) A call to system(c1.exe) returned error code '-1073740791'.
+# The logfile contains the following messages:
+# terminate called after throwing an instance of 'std::invalid_argument'
+#   what():  stoi
+# 
+# (vsim-50) A call to system(c1.exe) returned error code '-1073740791'.
+# The logfile contains the following messages:
+# terminate called after throwing an instance of 'std::invalid_argument'
+#   what():  stoi
+# 
+# (vsim-50) A call to system(c1.exe) returned error code '-1073740791'.
+# The logfile contains the following messages:
+# terminate called after throwing an instance of 'std::invalid_argument'
+#   what():  stoi
+# 
+# (vsim-50) A call to system(s2-s1.exe) returned error code '-1073740791'.
+# The logfile contains the following messages:
+# terminate called after throwing an instance of 'std::invalid_argument'
+#   what():  stoi
+# 
+# Time	clk	reset	enable	out	done
+# 0	0	1	0	000	0
+# 5000	1	1	0	000	0
+# 10000	0	1	0	000	0
+# 12000	0	0	1	000	0
+# 15000	1	0	1	001	1
+# 20000	0	0	1	001	1
+# 25000	1	0	1	010	1
+# 30000	0	0	1	010	1
+# 35000	1	0	1	011	1
+# 40000	0	0	1	011	1
+# 45000	1	0	1	100	1
+# 50000	0	0	1	100	1
+# 55000	1	0	1	101	1
+# 60000	0	0	1	101	1
+# 65000	1	0	1	110	0
+# 70000	0	0	1	110	0
+# 75000	1	0	1	111	1
+# 80000	0	0	1	111	1
+# 85000	1	0	1	000	1
+# 90000	0	0	1	000	1
+# 95000	1	0	1	001	1
+# 100000	0	0	1	001	1
+# 105000	1	0	1	010	1
+# 110000	0	0	1	010	1
+# 112000	0	0	0	010	1
+# 115000	1	0	0	010	1
+# 120000	0	0	0	010	1
+# 125000	1	0	0	010	1
+# 130000	0	0	0	010	1
+# 132000	0	0	1	010	1
+# 135000	1	0	1	011	1
+# 140000	0	0	1	011	1
+# 145000	1	0	1	100	1
+# 150000	0	0	1	100	1
+# 155000	1	0	1	101	1
+# 160000	0	0	1	101	1
+# 165000	1	0	1	110	0
+# 170000	0	0	1	110	0
+# 175000	1	0	1	111	1
+# 180000	0	0	1	111	1
+# 185000	1	0	1	000	1
+# 190000	0	0	1	000	1
+# 195000	1	0	1	001	1
+# 200000	0	0	1	001	1
+# 205000	1	0	1	010	1
+# 210000	0	0	1	010	1
+# 215000	1	0	1	011	1
+# 220000	0	0	1	011	1
+# 225000	1	0	1	100	1
+# 230000	0	0	1	100	1
+# ** Note: $finish    : C:/Users/Notebook/Desktop/tehUni/CAD/CA3/FPGA_src/counter_3bit.v(113)
+#    Time: 232 ns  Iteration: 0  Instance: /tb_counter_3bit
+# 1
+# Break in Module tb_counter_3bit at C:/Users/Notebook/Desktop/tehUni/CAD/CA3/FPGA_src/counter_3bit.v line 113
+# Compile of and.v was successful.
+# Compile of counter_6bit.v was successful.
+# Compile of F_function.v was successful.
+# Compile of fullAdder1bit.v was successful.
+# Compile of fulladder4x8.v was successful.
+# Compile of fulladderNbit.v was successful.
+# Compile of GH.v was successful.
+# Compile of GH_controller.v was successful.
+# Compile of GH_datapath.v was successful.
+# Compile of multiplier4-4.v was successful.
+# Compile of mux2to1.v was successful.
+# Compile of mux4-1.v was successful.
+# Compile of not.v was successful.
+# Compile of or.v was successful.
+# Compile of PRNG_controller.v was successful.
+# Compile of PRNG_datapath.v was successful.
+# Compile of PRNG-TOP.v was successful.
+# Compile of register.v was successful.
+# Compile of registerFile.v was successful.
+# Compile of shiftRegister.v was successful.
+# Compile of xnor.v was successful.
+# Compile of xor.v was successful.
+# Compile of modules.v was successful.
+# Compile of and3.v was successful.
+# Compile of counter_3bit.v was successful.
+# 25 compiles, 0 failed with no errors. 
+quit -sim
+vsim work.tb_counter_3bit
+# vsim work.tb_counter_3bit 
+# Loading work.tb_counter_3bit
+# Loading work.counter_3bit
+# ** Warning: (vsim-3009) [TSCALE] - Module 'counter_3bit' does not have a `timescale directive in effect, but previous modules do.
+#         Region: /tb_counter_3bit/uut
+# Loading work.or_gate
+# ** Warning: (vsim-3009) [TSCALE] - Module 'or_gate' does not have a `timescale directive in effect, but previous modules do.
+#         Region: /tb_counter_3bit/uut/OR0
+# Loading work.s2
+# ** Warning: (vsim-3009) [TSCALE] - Module 's2' does not have a `timescale directive in effect, but previous modules do.
+#         Region: /tb_counter_3bit/uut/s2_q0
+# Loading work.FDCP
+# ** Warning: (vsim-3009) [TSCALE] - Module 'FDCP' does not have a `timescale directive in effect, but previous modules do.
+#         Region: /tb_counter_3bit/uut/s2_q0/ff
+# Loading work.and_gate
+# ** Warning: (vsim-3009) [TSCALE] - Module 'and_gate' does not have a `timescale directive in effect, but previous modules do.
+#         Region: /tb_counter_3bit/uut/AND_Q0_Q1
+# Loading work.not_gate
+# ** Warning: (vsim-3009) [TSCALE] - Module 'not_gate' does not have a `timescale directive in effect, but previous modules do.
+#         Region: /tb_counter_3bit/uut/NOT_Q1
+# Loading work.c1
+# ** Warning: (vsim-3009) [TSCALE] - Module 'c1' does not have a `timescale directive in effect, but previous modules do.
+#         Region: /tb_counter_3bit/uut/OR0/or_bit[0]/or_inst
+add wave sim:/tb_counter_3bit/uut/*
+run -all
+# (vsim-50) A call to system(c1.exe) returned error code '-1073740791'.
+# The logfile contains the following messages:
+# terminate called after throwing an instance of 'std::invalid_argument'
+#   what():  stoi
+# 
+# (vsim-50) A call to system(s2-s1.exe) returned error code '-1073740791'.
+# The logfile contains the following messages:
+# terminate called after throwing an instance of 'std::invalid_argument'
+#   what():  stoi
+# 
+# (vsim-50) A call to system(c1.exe) returned error code '-1073740791'.
+# The logfile contains the following messages:
+# terminate called after throwing an instance of 'std::invalid_argument'
+#   what():  stoi
+# 
+# (vsim-50) A call to system(s2-s1.exe) returned error code '-1073740791'.
+# The logfile contains the following messages:
+# terminate called after throwing an instance of 'std::invalid_argument'
+#   what():  stoi
+# 
+# (vsim-50) A call to system(c1.exe) returned error code '-1073740791'.
+# The logfile contains the following messages:
+# terminate called after throwing an instance of 'std::invalid_argument'
+#   what():  stoi
+# 
+# (vsim-50) A call to system(c1.exe) returned error code '-1073740791'.
+# The logfile contains the following messages:
+# terminate called after throwing an instance of 'std::invalid_argument'
+#   what():  stoi
+# 
+# (vsim-50) A call to system(s2-s1.exe) returned error code '-1073740791'.
+# The logfile contains the following messages:
+# terminate called after throwing an instance of 'std::invalid_argument'
+#   what():  stoi
+# 
+# (vsim-50) A call to system(c1.exe) returned error code '-1073740791'.
+# The logfile contains the following messages:
+# terminate called after throwing an instance of 'std::invalid_argument'
+#   what():  stoi
+# 
+# (vsim-50) A call to system(c1.exe) returned error code '-1073740791'.
+# The logfile contains the following messages:
+# terminate called after throwing an instance of 'std::invalid_argument'
+#   what():  stoi
+# 
+# (vsim-50) A call to system(c1.exe) returned error code '-1073740791'.
+# The logfile contains the following messages:
+# terminate called after throwing an instance of 'std::invalid_argument'
+#   what():  stoi
+# 
+# (vsim-50) A call to system(c1.exe) returned error code '-1073740791'.
+# The logfile contains the following messages:
+# terminate called after throwing an instance of 'std::invalid_argument'
+#   what():  stoi
+# 
+# Time	clk	reset	enable	out	done
+# 0	0	1	0	000	0
+# 5000	1	1	0	000	0
+# 10000	0	1	0	000	0
+# 12000	0	0	1	000	0
+# 15000	1	0	1	001	0
+# 20000	0	0	1	001	0
+# 25000	1	0	1	010	0
+# 30000	0	0	1	010	0
+# 35000	1	0	1	011	0
+# 40000	0	0	1	011	0
+# 45000	1	0	1	100	0
+# 50000	0	0	1	100	0
+# 55000	1	0	1	101	1
+# 60000	0	0	1	101	1
+# 65000	1	0	1	110	0
+# 70000	0	0	1	110	0
+# 75000	1	0	1	111	0
+# 80000	0	0	1	111	0
+# 85000	1	0	1	000	0
+# 90000	0	0	1	000	0
+# 95000	1	0	1	001	0
+# 100000	0	0	1	001	0
+# 105000	1	0	1	010	0
+# 110000	0	0	1	010	0
+# 112000	0	0	0	010	0
+# 115000	1	0	0	010	0
+# 120000	0	0	0	010	0
+# 125000	1	0	0	010	0
+# 130000	0	0	0	010	0
+# 132000	0	0	1	010	0
+# 135000	1	0	1	011	0
+# 140000	0	0	1	011	0
+# 145000	1	0	1	100	0
+# 150000	0	0	1	100	0
+# 155000	1	0	1	101	1
+# 160000	0	0	1	101	1
+# 165000	1	0	1	110	0
+# 170000	0	0	1	110	0
+# 175000	1	0	1	111	0
+# 180000	0	0	1	111	0
+# 185000	1	0	1	000	0
+# 190000	0	0	1	000	0
+# 195000	1	0	1	001	0
+# 200000	0	0	1	001	0
+# 205000	1	0	1	010	0
+# 210000	0	0	1	010	0
+# 215000	1	0	1	011	0
+# 220000	0	0	1	011	0
+# 225000	1	0	1	100	0
+# 230000	0	0	1	100	0
+# ** Note: $finish    : C:/Users/Notebook/Desktop/tehUni/CAD/CA3/FPGA_src/counter_3bit.v(122)
+#    Time: 232 ns  Iteration: 0  Instance: /tb_counter_3bit
+# 1
+# Break in Module tb_counter_3bit at C:/Users/Notebook/Desktop/tehUni/CAD/CA3/FPGA_src/counter_3bit.v line 122
+quit -sim
+# Compile of and.v was successful.
+# Compile of counter_6bit.v was successful.
+# Compile of F_function.v was successful.
+# Compile of fullAdder1bit.v was successful.
+# Compile of fulladder4x8.v was successful.
+# Compile of fulladderNbit.v was successful.
+# Compile of GH.v was successful.
+# Compile of GH_controller.v was successful.
+# Compile of GH_datapath.v was successful.
+# Compile of multiplier4-4.v was successful.
+# Compile of mux2to1.v was successful.
+# Compile of mux4-1.v was successful.
+# Compile of not.v was successful.
+# Compile of or.v was successful.
+# Compile of PRNG_controller.v was successful.
+# Compile of PRNG_datapath.v was successful.
+# Compile of PRNG-TOP.v was successful.
+# Compile of register.v was successful.
+# Compile of registerFile.v was successful.
+# Compile of shiftRegister.v was successful.
+# Compile of xnor.v was successful.
+# Compile of xor.v was successful.
+# Compile of modules.v was successful.
+# Compile of and3.v was successful.
+# Compile of counter_3bit.v failed with 1 errors.
+# 25 compiles, 1 failed with 1 error. 
+# Compile of and.v was successful.
+# Compile of counter_6bit.v was successful.
+# Compile of F_function.v was successful.
+# Compile of fullAdder1bit.v was successful.
+# Compile of fulladder4x8.v was successful.
+# Compile of fulladderNbit.v was successful.
+# Compile of GH.v was successful.
+# Compile of GH_controller.v was successful.
+# Compile of GH_datapath.v was successful.
+# Compile of multiplier4-4.v was successful.
+# Compile of mux2to1.v was successful.
+# Compile of mux4-1.v was successful.
+# Compile of not.v was successful.
+# Compile of or.v was successful.
+# Compile of PRNG_controller.v was successful.
+# Compile of PRNG_datapath.v was successful.
+# Compile of PRNG-TOP.v was successful.
+# Compile of register.v was successful.
+# Compile of registerFile.v was successful.
+# Compile of shiftRegister.v was successful.
+# Compile of xnor.v was successful.
+# Compile of xor.v was successful.
+# Compile of modules.v was successful.
+# Compile of and3.v was successful.
+# Compile of counter_3bit.v was successful.
+# 25 compiles, 0 failed with no errors. 
+vsim work.tb_counter_3bit
+# vsim work.tb_counter_3bit 
+# Loading work.tb_counter_3bit
+# Loading work.counter_3bit
+# ** Warning: (vsim-3009) [TSCALE] - Module 'counter_3bit' does not have a `timescale directive in effect, but previous modules do.
+#         Region: /tb_counter_3bit/uut
+# Loading work.s2
+# ** Warning: (vsim-3009) [TSCALE] - Module 's2' does not have a `timescale directive in effect, but previous modules do.
+#         Region: /tb_counter_3bit/uut/s2_q0
+# Loading work.FDCP
+# ** Warning: (vsim-3009) [TSCALE] - Module 'FDCP' does not have a `timescale directive in effect, but previous modules do.
+#         Region: /tb_counter_3bit/uut/s2_q0/ff
+# Loading work.and_gate
+# ** Warning: (vsim-3009) [TSCALE] - Module 'and_gate' does not have a `timescale directive in effect, but previous modules do.
+#         Region: /tb_counter_3bit/uut/AND_Q0_Q1
+# Loading work.not_gate
+# ** Warning: (vsim-3009) [TSCALE] - Module 'not_gate' does not have a `timescale directive in effect, but previous modules do.
+#         Region: /tb_counter_3bit/uut/NOT_Q1
+# Loading work.or_gate
+# ** Warning: (vsim-3009) [TSCALE] - Module 'or_gate' does not have a `timescale directive in effect, but previous modules do.
+#         Region: /tb_counter_3bit/uut/OR_RST
+# Loading work.c1
+# ** Warning: (vsim-3009) [TSCALE] - Module 'c1' does not have a `timescale directive in effect, but previous modules do.
+#         Region: /tb_counter_3bit/uut/AND_Q0_Q1/and_gen[0]/and_gate
+add wave sim:/tb_counter_3bit/uut/*
+run -all
+# (vsim-50) A call to system(s2-s1.exe) returned error code '-1073740791'.
+# The logfile contains the following messages:
+# terminate called after throwing an instance of 'std::invalid_argument'
+#   what():  stoi
+# 
+# (vsim-50) A call to system(s2-s1.exe) returned error code '-1073740791'.
+# The logfile contains the following messages:
+# terminate called after throwing an instance of 'std::invalid_argument'
+#   what():  stoi
+# 
+# (vsim-50) A call to system(c1.exe) returned error code '-1073740791'.
+# The logfile contains the following messages:
+# terminate called after throwing an instance of 'std::invalid_argument'
+#   what():  stoi
+# 
+# (vsim-50) A call to system(s2-s1.exe) returned error code '-1073740791'.
+# The logfile contains the following messages:
+# terminate called after throwing an instance of 'std::invalid_argument'
+#   what():  stoi
+# 
+# (vsim-50) A call to system(c1.exe) returned error code '-1073740791'.
+# The logfile contains the following messages:
+# terminate called after throwing an instance of 'std::invalid_argument'
+#   what():  stoi
+# 
+# (vsim-50) A call to system(c1.exe) returned error code '-1073740791'.
+# The logfile contains the following messages:
+# terminate called after throwing an instance of 'std::invalid_argument'
+#   what():  stoi
+# 
+# (vsim-50) A call to system(c1.exe) returned error code '-1073740791'.
+# The logfile contains the following messages:
+# terminate called after throwing an instance of 'std::invalid_argument'
+#   what():  stoi
+# 
+# (vsim-50) A call to system(c1.exe) returned error code '-1073740791'.
+# The logfile contains the following messages:
+# terminate called after throwing an instance of 'std::invalid_argument'
+#   what():  stoi
+# 
+# Time	clk	reset	enable	out	done
+# 0	0	1	0	000	0
+# 5000	1	1	0	000	0
+# 10000	0	1	0	000	0
+# 12000	0	0	1	000	0
+# 15000	1	0	1	001	0
+# 20000	0	0	1	001	0
+# 25000	1	0	1	010	0
+# 30000	0	0	1	010	0
+# 35000	1	0	1	011	0
+# 40000	0	0	1	011	0
+# 45000	1	0	1	100	0
+# 50000	0	0	1	100	0
+# 55000	1	0	1	101	1
+# 60000	0	0	1	101	1
+# 65000	1	0	1	000	0
+# 70000	0	0	1	000	0
+# 75000	1	0	1	000	0
+# 80000	0	0	1	000	0
+# 85000	1	0	1	001	0
+# 90000	0	0	1	001	0
+# 95000	1	0	1	010	0
+# 100000	0	0	1	010	0
+# 105000	1	0	1	011	0
+# 110000	0	0	1	011	0
+# 112000	0	0	0	011	0
+# 115000	1	0	0	011	0
+# 120000	0	0	0	011	0
+# 125000	1	0	0	011	0
+# 130000	0	0	0	011	0
+# 132000	0	0	1	011	0
+# 135000	1	0	1	100	0
+# 140000	0	0	1	100	0
+# 145000	1	0	1	101	1
+# 150000	0	0	1	101	1
+# 155000	1	0	1	000	0
+# 160000	0	0	1	000	0
+# 165000	1	0	1	000	0
+# 170000	0	0	1	000	0
+# 175000	1	0	1	001	0
+# 180000	0	0	1	001	0
+# 185000	1	0	1	010	0
+# 190000	0	0	1	010	0
+# 195000	1	0	1	011	0
+# 200000	0	0	1	011	0
+# 205000	1	0	1	100	0
+# 210000	0	0	1	100	0
+# 215000	1	0	1	101	1
+# 220000	0	0	1	101	1
+# 225000	1	0	1	000	0
+# 230000	0	0	1	000	0
+# ** Note: $finish    : C:/Users/Notebook/Desktop/tehUni/CAD/CA3/FPGA_src/counter_3bit.v(116)
+#    Time: 232 ns  Iteration: 0  Instance: /tb_counter_3bit
+# 1
+# Break in Module tb_counter_3bit at C:/Users/Notebook/Desktop/tehUni/CAD/CA3/FPGA_src/counter_3bit.v line 116
+quit -sim
+# Compile of and.v was successful.
+# Compile of counter_6bit.v was successful.
+# Compile of F_function.v was successful.
+# Compile of fullAdder1bit.v was successful.
+# Compile of fulladder4x8.v was successful.
+# Compile of fulladderNbit.v was successful.
+# Compile of GH.v was successful.
+# Compile of GH_controller.v was successful.
+# Compile of GH_datapath.v was successful.
+# Compile of multiplier4-4.v was successful.
+# Compile of mux2to1.v was successful.
+# Compile of mux4-1.v was successful.
+# Compile of not.v was successful.
+# Compile of or.v was successful.
+# Compile of PRNG_controller.v was successful.
+# Compile of PRNG_datapath.v was successful.
+# Compile of PRNG-TOP.v was successful.
+# Compile of register.v was successful.
+# Compile of registerFile.v was successful.
+# Compile of shiftRegister.v was successful.
+# Compile of xnor.v was successful.
+# Compile of xor.v was successful.
+# Compile of modules.v was successful.
+# Compile of and3.v was successful.
+# Compile of counter_3bit.v was successful.
+# 25 compiles, 0 failed with no errors. 
+vsim work.GH_top_tb
+# vsim work.GH_top_tb 
+# Loading work.GH_top_tb
+# Loading work.GH_top
+# Loading work.counter_6bit
+# Loading work.s2
+# Loading work.FDCP
+# Loading work.and_gate
+# Loading sv_std.std
+# Loading work.GH_datapath
+# Loading work.regfile4x8_parallel
+# Loading work.register
+# Loading work.mux4
+# Loading work.or_gate
+# Loading work.PRNG
+# Loading work.PRNG_controller
+# Loading work.not_gate
+# Loading work.PRNG_Datapath
+# Loading work.xor_gate
+# Loading work.shift_register_6
+# Loading work.counter_3bit
+# Loading work.F_function_8bit
+# Loading work.adder4x8
+# Loading work.adder_n
+# Loading work.mult4x4
+# Loading work.mux2
+# Loading work.GH_controller
+# Loading work.c1
+# Loading work.c2
+# Loading work.fulladder1bit
+add wave sim:/GH_top_tb/uut/*
+run -all
+# (vsim-50) A call to system(s2-s1.exe) returned error code '-1073740791'.
+# The logfile contains the following messages:
+# terminate called after throwing an instance of 'std::invalid_argument'
+#   what():  stoi
+# 
+# (vsim-50) A call to system(s2-s1.exe) returned error code '-1073740791'.
+# The logfile contains the following messages:
+# terminate called after throwing an instance of 'std::invalid_argument'
+#   what():  stoi
+# 
+# (vsim-50) A call to system(s2-s1.exe) returned error code '-1073740791'.
+# The logfile contains the following messages:
+# terminate called after throwing an instance of 'std::invalid_argument'
+#   what():  stoi
+# 
+# (vsim-50) A call to system(s2-s1.exe) returned error code '-1073740791'.
+# The logfile contains the following messages:
+# terminate called after throwing an instance of 'std::invalid_argument'
+#   what():  stoi
+# 
+# (vsim-50) A call to system(s2-s1.exe) returned error code '-1073740791'.
+# The logfile contains the following messages:
+# terminate called after throwing an instance of 'std::invalid_argument'
+#   what():  stoi
+# 
+# (vsim-50) A call to system(s2-s1.exe) returned error code '-1073740791'.
+# The logfile contains the following messages:
+# terminate called after throwing an instance of 'std::invalid_argument'
+#   what():  stoi
+# 
+# ** Note: $finish    : C:/Users/Notebook/Desktop/tehUni/CAD/CA3/FPGA_src/GH.v(83)
+#    Time: 6345 ps  Iteration: 4  Instance: /GH_top_tb
+# 1
+# Break in Module GH_top_tb at C:/Users/Notebook/Desktop/tehUni/CAD/CA3/FPGA_src/GH.v line 83
+# Compile of and.v was successful.
+# Compile of counter_6bit.v was successful.
+# Compile of F_function.v was successful.
+# Compile of fullAdder1bit.v was successful.
+# Compile of fulladder4x8.v was successful.
+# Compile of fulladderNbit.v was successful.
+# Compile of GH.v was successful.
+# Compile of GH_controller.v was successful.
+# Compile of GH_datapath.v was successful.
+# Compile of multiplier4-4.v was successful.
+# Compile of mux2to1.v was successful.
+# Compile of mux4-1.v was successful.
+# Compile of not.v was successful.
+# Compile of or.v was successful.
+# Compile of PRNG_controller.v was successful.
+# Compile of PRNG_datapath.v was successful.
+# Compile of PRNG-TOP.v was successful.
+# Compile of register.v was successful.
+# Compile of registerFile.v was successful.
+# Compile of shiftRegister.v was successful.
+# Compile of xnor.v was successful.
+# Compile of xor.v was successful.
+# Compile of modules.v was successful.
+# Compile of and3.v was successful.
+# Compile of counter_3bit.v was successful.
+# 25 compiles, 0 failed with no errors. 
+quit -sim
+vsim work.GH_top_tb
+# vsim work.GH_top_tb 
+# Loading work.GH_top_tb
+# Loading work.GH_top
+# Loading work.counter_6bit
+# Loading work.s2
+# Loading work.FDCP
+# Loading work.and_gate
+# Loading sv_std.std
+# Loading work.GH_datapath
+# Loading work.regfile4x8_parallel
+# Loading work.register
+# Loading work.mux4
+# Loading work.or_gate
+# Loading work.PRNG
+# Loading work.PRNG_controller
+# Loading work.not_gate
+# Loading work.PRNG_Datapath
+# Loading work.xor_gate
+# Loading work.shift_register_6
+# Loading work.counter_3bit
+# Loading work.F_function_8bit
+# Loading work.adder4x8
+# Loading work.adder_n
+# Loading work.mult4x4
+# Loading work.mux2
+# Loading work.GH_controller
+# Loading work.c1
+# Loading work.c2
+# Loading work.fulladder1bit
+# ** Error: (vsim-3033) C:/Users/Notebook/Desktop/tehUni/CAD/CA3/FPGA_src/fullAdder1bit.v(3): Instantiation of 'my_not' failed. The design unit was not found.
+#         Region: /GH_top_tb/uut/datapath/adder1_inst/adder_ab/fa_gen[0]/fa
+#         Searched libraries:
+#             C:\Users\Notebook\Desktop\tehUni\CAD\CA3\FPGA_src\work
+# ** Error: (vsim-3033) C:/Users/Notebook/Desktop/tehUni/CAD/CA3/FPGA_src/fullAdder1bit.v(3): Instantiation of 'my_not' failed. The design unit was not found.
+#         Region: /GH_top_tb/uut/datapath/adder1_inst/adder_ab/fa_gen[1]/fa
+#         Searched libraries:
+#             C:\Users\Notebook\Desktop\tehUni\CAD\CA3\FPGA_src\work
+# ** Error: (vsim-3033) C:/Users/Notebook/Desktop/tehUni/CAD/CA3/FPGA_src/fullAdder1bit.v(3): Instantiation of 'my_not' failed. The design unit was not found.
+#         Region: /GH_top_tb/uut/datapath/adder1_inst/adder_ab/fa_gen[2]/fa
+#         Searched libraries:
+#             C:\Users\Notebook\Desktop\tehUni\CAD\CA3\FPGA_src\work
+# ** Error: (vsim-3033) C:/Users/Notebook/Desktop/tehUni/CAD/CA3/FPGA_src/fullAdder1bit.v(3): Instantiation of 'my_not' failed. The design unit was not found.
+#         Region: /GH_top_tb/uut/datapath/adder1_inst/adder_ab/fa_gen[3]/fa
+#         Searched libraries:
+#             C:\Users\Notebook\Desktop\tehUni\CAD\CA3\FPGA_src\work
+# ** Error: (vsim-3033) C:/Users/Notebook/Desktop/tehUni/CAD/CA3/FPGA_src/fullAdder1bit.v(3): Instantiation of 'my_not' failed. The design unit was not found.
+#         Region: /GH_top_tb/uut/datapath/adder1_inst/adder_ab/fa_gen[4]/fa
+#         Searched libraries:
+#             C:\Users\Notebook\Desktop\tehUni\CAD\CA3\FPGA_src\work
+# ** Error: (vsim-3033) C:/Users/Notebook/Desktop/tehUni/CAD/CA3/FPGA_src/fullAdder1bit.v(3): Instantiation of 'my_not' failed. The design unit was not found.
+#         Region: /GH_top_tb/uut/datapath/adder1_inst/adder_ab/fa_gen[5]/fa
+#         Searched libraries:
+#             C:\Users\Notebook\Desktop\tehUni\CAD\CA3\FPGA_src\work
+# ** Error: (vsim-3033) C:/Users/Notebook/Desktop/tehUni/CAD/CA3/FPGA_src/fullAdder1bit.v(3): Instantiation of 'my_not' failed. The design unit was not found.
+#         Region: /GH_top_tb/uut/datapath/adder1_inst/adder_ab/fa_gen[6]/fa
+#         Searched libraries:
+#             C:\Users\Notebook\Desktop\tehUni\CAD\CA3\FPGA_src\work
+# ** Error: (vsim-3033) C:/Users/Notebook/Desktop/tehUni/CAD/CA3/FPGA_src/fullAdder1bit.v(3): Instantiation of 'my_not' failed. The design unit was not found.
+#         Region: /GH_top_tb/uut/datapath/adder1_inst/adder_ab/fa_gen[7]/fa
+#         Searched libraries:
+#             C:\Users\Notebook\Desktop\tehUni\CAD\CA3\FPGA_src\work
+# ** Error: (vsim-3033) C:/Users/Notebook/Desktop/tehUni/CAD/CA3/FPGA_src/fullAdder1bit.v(3): Instantiation of 'my_not' failed. The design unit was not found.
+#         Region: /GH_top_tb/uut/datapath/adder1_inst/adder_abc/fa_gen[0]/fa
+#         Searched libraries:
+#             C:\Users\Notebook\Desktop\tehUni\CAD\CA3\FPGA_src\work
+# ** Error: (vsim-3033) C:/Users/Notebook/Desktop/tehUni/CAD/CA3/FPGA_src/fullAdder1bit.v(3): Instantiation of 'my_not' failed. The design unit was not found.
+#         Region: /GH_top_tb/uut/datapath/adder1_inst/adder_abc/fa_gen[1]/fa
+#         Searched libraries:
+#             C:\Users\Notebook\Desktop\tehUni\CAD\CA3\FPGA_src\work
+# ** Error: (vsim-3033) C:/Users/Notebook/Desktop/tehUni/CAD/CA3/FPGA_src/fullAdder1bit.v(3): Instantiation of 'my_not' failed. The design unit was not found.
+#         Region: /GH_top_tb/uut/datapath/adder1_inst/adder_abc/fa_gen[2]/fa
+#         Searched libraries:
+#             C:\Users\Notebook\Desktop\tehUni\CAD\CA3\FPGA_src\work
+# ** Error: (vsim-3033) C:/Users/Notebook/Desktop/tehUni/CAD/CA3/FPGA_src/fullAdder1bit.v(3): Instantiation of 'my_not' failed. The design unit was not found.
+#         Region: /GH_top_tb/uut/datapath/adder1_inst/adder_abc/fa_gen[3]/fa
+#         Searched libraries:
+#             C:\Users\Notebook\Desktop\tehUni\CAD\CA3\FPGA_src\work
+# ** Error: (vsim-3033) C:/Users/Notebook/Desktop/tehUni/CAD/CA3/FPGA_src/fullAdder1bit.v(3): Instantiation of 'my_not' failed. The design unit was not found.
+#         Region: /GH_top_tb/uut/datapath/adder1_inst/adder_abc/fa_gen[4]/fa
+#         Searched libraries:
+#             C:\Users\Notebook\Desktop\tehUni\CAD\CA3\FPGA_src\work
+# ** Error: (vsim-3033) C:/Users/Notebook/Desktop/tehUni/CAD/CA3/FPGA_src/fullAdder1bit.v(3): Instantiation of 'my_not' failed. The design unit was not found.
+#         Region: /GH_top_tb/uut/datapath/adder1_inst/adder_abc/fa_gen[5]/fa
+#         Searched libraries:
+#             C:\Users\Notebook\Desktop\tehUni\CAD\CA3\FPGA_src\work
+# ** Error: (vsim-3033) C:/Users/Notebook/Desktop/tehUni/CAD/CA3/FPGA_src/fullAdder1bit.v(3): Instantiation of 'my_not' failed. The design unit was not found.
+#         Region: /GH_top_tb/uut/datapath/adder1_inst/adder_abc/fa_gen[6]/fa
+#         Searched libraries:
+#             C:\Users\Notebook\Desktop\tehUni\CAD\CA3\FPGA_src\work
+# ** Error: (vsim-3033) C:/Users/Notebook/Desktop/tehUni/CAD/CA3/FPGA_src/fullAdder1bit.v(3): Instantiation of 'my_not' failed. The design unit was not found.
+#         Region: /GH_top_tb/uut/datapath/adder1_inst/adder_abc/fa_gen[7]/fa
+#         Searched libraries:
+#             C:\Users\Notebook\Desktop\tehUni\CAD\CA3\FPGA_src\work
+# ** Error: (vsim-3033) C:/Users/Notebook/Desktop/tehUni/CAD/CA3/FPGA_src/fullAdder1bit.v(3): Instantiation of 'my_not' failed. The design unit was not found.
+#         Region: /GH_top_tb/uut/datapath/adder1_inst/adder_abcd/fa_gen[0]/fa
+#         Searched libraries:
+#             C:\Users\Notebook\Desktop\tehUni\CAD\CA3\FPGA_src\work
+# ** Error: (vsim-3033) C:/Users/Notebook/Desktop/tehUni/CAD/CA3/FPGA_src/fullAdder1bit.v(3): Instantiation of 'my_not' failed. The design unit was not found.
+#         Region: /GH_top_tb/uut/datapath/adder1_inst/adder_abcd/fa_gen[1]/fa
+#         Searched libraries:
+#             C:\Users\Notebook\Desktop\tehUni\CAD\CA3\FPGA_src\work
+# ** Error: (vsim-3033) C:/Users/Notebook/Desktop/tehUni/CAD/CA3/FPGA_src/fullAdder1bit.v(3): Instantiation of 'my_not' failed. The design unit was not found.
+#         Region: /GH_top_tb/uut/datapath/adder1_inst/adder_abcd/fa_gen[2]/fa
+#         Searched libraries:
+#             C:\Users\Notebook\Desktop\tehUni\CAD\CA3\FPGA_src\work
+# ** Error: (vsim-3033) C:/Users/Notebook/Desktop/tehUni/CAD/CA3/FPGA_src/fullAdder1bit.v(3): Instantiation of 'my_not' failed. The design unit was not found.
+#         Region: /GH_top_tb/uut/datapath/adder1_inst/adder_abcd/fa_gen[3]/fa
+#         Searched libraries:
+#             C:\Users\Notebook\Desktop\tehUni\CAD\CA3\FPGA_src\work
+# ** Error: (vsim-3033) C:/Users/Notebook/Desktop/tehUni/CAD/CA3/FPGA_src/fullAdder1bit.v(3): Instantiation of 'my_not' failed. The design unit was not found.
+#         Region: /GH_top_tb/uut/datapath/adder1_inst/adder_abcd/fa_gen[4]/fa
+#         Searched libraries:
+#             C:\Users\Notebook\Desktop\tehUni\CAD\CA3\FPGA_src\work
+# ** Error: (vsim-3033) C:/Users/Notebook/Desktop/tehUni/CAD/CA3/FPGA_src/fullAdder1bit.v(3): Instantiation of 'my_not' failed. The design unit was not found.
+#         Region: /GH_top_tb/uut/datapath/adder1_inst/adder_abcd/fa_gen[5]/fa
+#         Searched libraries:
+#             C:\Users\Notebook\Desktop\tehUni\CAD\CA3\FPGA_src\work
+# ** Error: (vsim-3033) C:/Users/Notebook/Desktop/tehUni/CAD/CA3/FPGA_src/fullAdder1bit.v(3): Instantiation of 'my_not' failed. The design unit was not found.
+#         Region: /GH_top_tb/uut/datapath/adder1_inst/adder_abcd/fa_gen[6]/fa
+#         Searched libraries:
+#             C:\Users\Notebook\Desktop\tehUni\CAD\CA3\FPGA_src\work
+# ** Error: (vsim-3033) C:/Users/Notebook/Desktop/tehUni/CAD/CA3/FPGA_src/fullAdder1bit.v(3): Instantiation of 'my_not' failed. The design unit was not found.
+#         Region: /GH_top_tb/uut/datapath/adder1_inst/adder_abcd/fa_gen[7]/fa
+#         Searched libraries:
+#             C:\Users\Notebook\Desktop\tehUni\CAD\CA3\FPGA_src\work
+# ** Error: (vsim-3033) C:/Users/Notebook/Desktop/tehUni/CAD/CA3/FPGA_src/fullAdder1bit.v(3): Instantiation of 'my_not' failed. The design unit was not found.
+#         Region: /GH_top_tb/uut/datapath/mult1/adder_ab/fa_gen[0]/fa
+#         Searched libraries:
+#             C:\Users\Notebook\Desktop\tehUni\CAD\CA3\FPGA_src\work
+# ** Error: (vsim-3033) C:/Users/Notebook/Desktop/tehUni/CAD/CA3/FPGA_src/fullAdder1bit.v(3): Instantiation of 'my_not' failed. The design unit was not found.
+#         Region: /GH_top_tb/uut/datapath/mult1/adder_ab/fa_gen[1]/fa
+#         Searched libraries:
+#             C:\Users\Notebook\Desktop\tehUni\CAD\CA3\FPGA_src\work
+# ** Error: (vsim-3033) C:/Users/Notebook/Desktop/tehUni/CAD/CA3/FPGA_src/fullAdder1bit.v(3): Instantiation of 'my_not' failed. The design unit was not found.
+#         Region: /GH_top_tb/uut/datapath/mult1/adder_ab/fa_gen[2]/fa
+#         Searched libraries:
+#             C:\Users\Notebook\Desktop\tehUni\CAD\CA3\FPGA_src\work
+# ** Error: (vsim-3033) C:/Users/Notebook/Desktop/tehUni/CAD/CA3/FPGA_src/fullAdder1bit.v(3): Instantiation of 'my_not' failed. The design unit was not found.
+#         Region: /GH_top_tb/uut/datapath/mult1/adder_ab/fa_gen[3]/fa
+#         Searched libraries:
+#             C:\Users\Notebook\Desktop\tehUni\CAD\CA3\FPGA_src\work
+# ** Error: (vsim-3033) C:/Users/Notebook/Desktop/tehUni/CAD/CA3/FPGA_src/fullAdder1bit.v(3): Instantiation of 'my_not' failed. The design unit was not found.
+#         Region: /GH_top_tb/uut/datapath/mult1/adder_ab/fa_gen[4]/fa
+#         Searched libraries:
+#             C:\Users\Notebook\Desktop\tehUni\CAD\CA3\FPGA_src\work
+# ** Error: (vsim-3033) C:/Users/Notebook/Desktop/tehUni/CAD/CA3/FPGA_src/fullAdder1bit.v(3): Instantiation of 'my_not' failed. The design unit was not found.
+#         Region: /GH_top_tb/uut/datapath/mult1/adder_ab/fa_gen[5]/fa
+#         Searched libraries:
+#             C:\Users\Notebook\Desktop\tehUni\CAD\CA3\FPGA_src\work
+# ** Error: (vsim-3033) C:/Users/Notebook/Desktop/tehUni/CAD/CA3/FPGA_src/fullAdder1bit.v(3): Instantiation of 'my_not' failed. The design unit was not found.
+#         Region: /GH_top_tb/uut/datapath/mult1/adder_ab/fa_gen[6]/fa
+#         Searched libraries:
+#             C:\Users\Notebook\Desktop\tehUni\CAD\CA3\FPGA_src\work
+# ** Error: (vsim-3033) C:/Users/Notebook/Desktop/tehUni/CAD/CA3/FPGA_src/fullAdder1bit.v(3): Instantiation of 'my_not' failed. The design unit was not found.
+#         Region: /GH_top_tb/uut/datapath/mult1/adder_ab/fa_gen[7]/fa
+#         Searched libraries:
+#             C:\Users\Notebook\Desktop\tehUni\CAD\CA3\FPGA_src\work
+# ** Error: (vsim-3033) C:/Users/Notebook/Desktop/tehUni/CAD/CA3/FPGA_src/fullAdder1bit.v(3): Instantiation of 'my_not' failed. The design unit was not found.
+#         Region: /GH_top_tb/uut/datapath/mult1/adder_abc/fa_gen[0]/fa
+#         Searched libraries:
+#             C:\Users\Notebook\Desktop\tehUni\CAD\CA3\FPGA_src\work
+# ** Error: (vsim-3033) C:/Users/Notebook/Desktop/tehUni/CAD/CA3/FPGA_src/fullAdder1bit.v(3): Instantiation of 'my_not' failed. The design unit was not found.
+#         Region: /GH_top_tb/uut/datapath/mult1/adder_abc/fa_gen[1]/fa
+#         Searched libraries:
+#             C:\Users\Notebook\Desktop\tehUni\CAD\CA3\FPGA_src\work
+# ** Error: (vsim-3033) C:/Users/Notebook/Desktop/tehUni/CAD/CA3/FPGA_src/fullAdder1bit.v(3): Instantiation of 'my_not' failed. The design unit was not found.
+#         Region: /GH_top_tb/uut/datapath/mult1/adder_abc/fa_gen[2]/fa
+#         Searched libraries:
+#             C:\Users\Notebook\Desktop\tehUni\CAD\CA3\FPGA_src\work
+# ** Error: (vsim-3033) C:/Users/Notebook/Desktop/tehUni/CAD/CA3/FPGA_src/fullAdder1bit.v(3): Instantiation of 'my_not' failed. The design unit was not found.
+#         Region: /GH_top_tb/uut/datapath/mult1/adder_abc/fa_gen[3]/fa
+#         Searched libraries:
+#             C:\Users\Notebook\Desktop\tehUni\CAD\CA3\FPGA_src\work
+# ** Error: (vsim-3033) C:/Users/Notebook/Desktop/tehUni/CAD/CA3/FPGA_src/fullAdder1bit.v(3): Instantiation of 'my_not' failed. The design unit was not found.
+#         Region: /GH_top_tb/uut/datapath/mult1/adder_abc/fa_gen[4]/fa
+#         Searched libraries:
+#             C:\Users\Notebook\Desktop\tehUni\CAD\CA3\FPGA_src\work
+# ** Error: (vsim-3033) C:/Users/Notebook/Desktop/tehUni/CAD/CA3/FPGA_src/fullAdder1bit.v(3): Instantiation of 'my_not' failed. The design unit was not found.
+#         Region: /GH_top_tb/uut/datapath/mult1/adder_abc/fa_gen[5]/fa
+#         Searched libraries:
+#             C:\Users\Notebook\Desktop\tehUni\CAD\CA3\FPGA_src\work
+# ** Error: (vsim-3033) C:/Users/Notebook/Desktop/tehUni/CAD/CA3/FPGA_src/fullAdder1bit.v(3): Instantiation of 'my_not' failed. The design unit was not found.
+#         Region: /GH_top_tb/uut/datapath/mult1/adder_abc/fa_gen[6]/fa
+#         Searched libraries:
+#             C:\Users\Notebook\Desktop\tehUni\CAD\CA3\FPGA_src\work
+# ** Error: (vsim-3033) C:/Users/Notebook/Desktop/tehUni/CAD/CA3/FPGA_src/fullAdder1bit.v(3): Instantiation of 'my_not' failed. The design unit was not found.
+#         Region: /GH_top_tb/uut/datapath/mult1/adder_abc/fa_gen[7]/fa
+#         Searched libraries:
+#             C:\Users\Notebook\Desktop\tehUni\CAD\CA3\FPGA_src\work
+# ** Error: (vsim-3033) C:/Users/Notebook/Desktop/tehUni/CAD/CA3/FPGA_src/fullAdder1bit.v(3): Instantiation of 'my_not' failed. The design unit was not found.
+#         Region: /GH_top_tb/uut/datapath/mult1/adder_abcd/fa_gen[0]/fa
+#         Searched libraries:
+#             C:\Users\Notebook\Desktop\tehUni\CAD\CA3\FPGA_src\work
+# ** Error: (vsim-3033) C:/Users/Notebook/Desktop/tehUni/CAD/CA3/FPGA_src/fullAdder1bit.v(3): Instantiation of 'my_not' failed. The design unit was not found.
+#         Region: /GH_top_tb/uut/datapath/mult1/adder_abcd/fa_gen[1]/fa
+#         Searched libraries:
+#             C:\Users\Notebook\Desktop\tehUni\CAD\CA3\FPGA_src\work
+# ** Error: (vsim-3033) C:/Users/Notebook/Desktop/tehUni/CAD/CA3/FPGA_src/fullAdder1bit.v(3): Instantiation of 'my_not' failed. The design unit was not found.
+#         Region: /GH_top_tb/uut/datapath/mult1/adder_abcd/fa_gen[2]/fa
+#         Searched libraries:
+#             C:\Users\Notebook\Desktop\tehUni\CAD\CA3\FPGA_src\work
+# ** Error: (vsim-3033) C:/Users/Notebook/Desktop/tehUni/CAD/CA3/FPGA_src/fullAdder1bit.v(3): Instantiation of 'my_not' failed. The design unit was not found.
+#         Region: /GH_top_tb/uut/datapath/mult1/adder_abcd/fa_gen[3]/fa
+#         Searched libraries:
+#             C:\Users\Notebook\Desktop\tehUni\CAD\CA3\FPGA_src\work
+# ** Error: (vsim-3033) C:/Users/Notebook/Desktop/tehUni/CAD/CA3/FPGA_src/fullAdder1bit.v(3): Instantiation of 'my_not' failed. The design unit was not found.
+#         Region: /GH_top_tb/uut/datapath/mult1/adder_abcd/fa_gen[4]/fa
+#         Searched libraries:
+#             C:\Users\Notebook\Desktop\tehUni\CAD\CA3\FPGA_src\work
+# ** Error: (vsim-3033) C:/Users/Notebook/Desktop/tehUni/CAD/CA3/FPGA_src/fullAdder1bit.v(3): Instantiation of 'my_not' failed. The design unit was not found.
+#         Region: /GH_top_tb/uut/datapath/mult1/adder_abcd/fa_gen[5]/fa
+#         Searched libraries:
+#             C:\Users\Notebook\Desktop\tehUni\CAD\CA3\FPGA_src\work
+# ** Error: (vsim-3033) C:/Users/Notebook/Desktop/tehUni/CAD/CA3/FPGA_src/fullAdder1bit.v(3): Instantiation of 'my_not' failed. The design unit was not found.
+#         Region: /GH_top_tb/uut/datapath/mult1/adder_abcd/fa_gen[6]/fa
+#         Searched libraries:
+#             C:\Users\Notebook\Desktop\tehUni\CAD\CA3\FPGA_src\work
+# ** Error: (vsim-3033) C:/Users/Notebook/Desktop/tehUni/CAD/CA3/FPGA_src/fullAdder1bit.v(3): Instantiation of 'my_not' failed. The design unit was not found.
+#         Region: /GH_top_tb/uut/datapath/mult1/adder_abcd/fa_gen[7]/fa
+#         Searched libraries:
+#             C:\Users\Notebook\Desktop\tehUni\CAD\CA3\FPGA_src\work
+# ** Error: (vsim-3033) C:/Users/Notebook/Desktop/tehUni/CAD/CA3/FPGA_src/fullAdder1bit.v(3): Instantiation of 'my_not' failed. The design unit was not found.
+#         Region: /GH_top_tb/uut/datapath/adder2/fa_gen[0]/fa
+#         Searched libraries:
+#             C:\Users\Notebook\Desktop\tehUni\CAD\CA3\FPGA_src\work
+# ** Error: (vsim-3033) C:/Users/Notebook/Desktop/tehUni/CAD/CA3/FPGA_src/fullAdder1bit.v(3): Instantiation of 'my_not' failed. The design unit was not found.
+#         Region: /GH_top_tb/uut/datapath/adder2/fa_gen[1]/fa
+#         Searched libraries:
+#             C:\Users\Notebook\Desktop\tehUni\CAD\CA3\FPGA_src\work
+# ** Error: (vsim-3033) C:/Users/Notebook/Desktop/tehUni/CAD/CA3/FPGA_src/fullAdder1bit.v(3): Instantiation of 'my_not' failed. The design unit was not found.
+#         Region: /GH_top_tb/uut/datapath/adder2/fa_gen[2]/fa
+#         Searched libraries:
+#             C:\Users\Notebook\Desktop\tehUni\CAD\CA3\FPGA_src\work
+# ** Error: (vsim-3033) C:/Users/Notebook/Desktop/tehUni/CAD/CA3/FPGA_src/fullAdder1bit.v(3): Instantiation of 'my_not' failed. The design unit was not found.
+#         Region: /GH_top_tb/uut/datapath/adder2/fa_gen[3]/fa
+#         Searched libraries:
+#             C:\Users\Notebook\Desktop\tehUni\CAD\CA3\FPGA_src\work
+# ** Error: (vsim-3033) C:/Users/Notebook/Desktop/tehUni/CAD/CA3/FPGA_src/fullAdder1bit.v(3): Instantiation of 'my_not' failed. The design unit was not found.
+#         Region: /GH_top_tb/uut/datapath/adder2/fa_gen[4]/fa
+#         Searched libraries:
+#             C:\Users\Notebook\Desktop\tehUni\CAD\CA3\FPGA_src\work
+# ** Error: (vsim-3033) C:/Users/Notebook/Desktop/tehUni/CAD/CA3/FPGA_src/fullAdder1bit.v(3): Instantiation of 'my_not' failed. The design unit was not found.
+#         Region: /GH_top_tb/uut/datapath/adder2/fa_gen[5]/fa
+#         Searched libraries:
+#             C:\Users\Notebook\Desktop\tehUni\CAD\CA3\FPGA_src\work
+# ** Error: (vsim-3033) C:/Users/Notebook/Desktop/tehUni/CAD/CA3/FPGA_src/fullAdder1bit.v(3): Instantiation of 'my_not' failed. The design unit was not found.
+#         Region: /GH_top_tb/uut/datapath/adder2/fa_gen[6]/fa
+#         Searched libraries:
+#             C:\Users\Notebook\Desktop\tehUni\CAD\CA3\FPGA_src\work
+# ** Error: (vsim-3033) C:/Users/Notebook/Desktop/tehUni/CAD/CA3/FPGA_src/fullAdder1bit.v(3): Instantiation of 'my_not' failed. The design unit was not found.
+#         Region: /GH_top_tb/uut/datapath/adder2/fa_gen[7]/fa
+#         Searched libraries:
+#             C:\Users\Notebook\Desktop\tehUni\CAD\CA3\FPGA_src\work
+# Error loading design

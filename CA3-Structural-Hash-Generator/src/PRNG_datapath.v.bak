@@ -1,0 +1,82 @@
+module PRNG_Datapath (
+    input  wire       clk,
+    input  wire       reset,
+    input  wire       load_reg,
+    input  wire       count_enable,
+    input  wire [5:0] data_in,
+    output wire [1:0] rnd_out,
+    output wire       count_done
+);
+    
+    wire [5:0] shift_q;
+    wire feedback_bit;
+    wire [2:0] count;
+    wire xor1_out;
+
+    // XOR1 = shift_q[5] ^ shift_q[3]
+    xor_gate #(.N(1)) xor1 (
+        .a(shift_q[5]),
+        .b(shift_q[3]),
+        .xor_out(xor1_out)
+    );
+
+    // XOR2 = xor1_out ^ shift_q[1]
+    xor_gate #(.N(1)) xor2 (
+        .a(xor1_out),
+        .b(shift_q[1]),
+        .xor_out(feedback_bit)
+    );
+    
+    shift_register_6 shift_reg_inst (
+        .clk(clk),
+        .reset(reset),
+        .load(load_reg),
+        .enable(count_enable),
+        .d_in(data_in),
+        .shift_in(feedback_bit),
+        .q_out(shift_q)
+    );
+
+    counter_3bit counter_inst (
+        .reset(reset), 
+        .clk(clk), 
+        .enable(count_enable),
+        .out(count), 
+        .done(count_done)
+    );
+
+    assign rnd_out = shift_q[5:4];
+
+endmodule
+
+
+module PRNG_Datapath_tb;
+    reg clk, reset, load_reg, count_enable;
+    reg [5:0] data_in;
+    wire [1:0] rnd_out;
+    wire count_done;
+
+    PRNG_Datapath uut (
+        .clk(clk),
+        .reset(reset),
+        .load_reg(load_reg),
+        .count_enable(count_enable),
+        .data_in(data_in),
+        .rnd_out(rnd_out),
+        .count_done(count_done)
+    );
+
+    initial begin
+
+        clk = 0; reset = 1; load_reg = 0; count_enable = 0; data_in = 6'b000000; #10;
+        reset = 0; #10;
+
+        load_reg = 1; data_in = 6'b101010; #10;
+        load_reg = 0; count_enable = 1; #100;
+        count_enable = 0; #10;
+
+        $finish;
+    end
+
+    always #5 clk = ~clk;
+endmodule

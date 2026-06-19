@@ -1,0 +1,57 @@
+m255
+K3
+13
+cModel Technology
+dC:\Users\Notebook\Desktop\tehUni\CAD\midterm
+vcontroller
+IB3T]V_o;NMBJJAO_IHgeC1
+V3b9J^cgmU[lleXciXW6Tc0
+Z0 dC:\Users\Notebook\Desktop\tehUni\CAD\CA5\Test1\codes
+Z1 w1767644598
+8C:/Users/Notebook/Desktop/tehUni/CAD/CA5/Test1/codes/controller.v
+FC:/Users/Notebook/Desktop/tehUni/CAD/CA5/Test1/codes/controller.v
+L0 1
+Z2 OV;L;6.3g_p1;37
+r1
+31
+Z3 o-work work -nocovercells -O0
+!s85 0
+vdatapath
+IBa_Q8>_EQWg0FzOe8=YMa0
+VdjGOagnZC7kI1mCB0QSe20
+Z4 dC:\Users\Notebook\Desktop\tehUni\CAD\CA5\Test1\codes
+R1
+8C:/Users/Notebook/Desktop/tehUni/CAD/CA5/Test1/codes/datapath.v
+FC:/Users/Notebook/Desktop/tehUni/CAD/CA5/Test1/codes/datapath.v
+L0 1
+R2
+r1
+31
+R3
+!s85 0
+vtb_top
+IF@bJEk7jD:B53n40P8kze3
+V[LcaLh[SJXomY3Ki^RaI?1
+R4
+w1767646153
+8C:/Users/Notebook/Desktop/tehUni/CAD/CA5/Test1/TestBench.v
+FC:/Users/Notebook/Desktop/tehUni/CAD/CA5/Test1/TestBench.v
+L0 3
+R2
+r1
+!s85 0
+31
+R3
+vtop
+ImIei;^C=D^B26]IizK4QW2
+V=fJ4om>bMhjOgYESg;3><2
+R4
+R1
+8C:/Users/Notebook/Desktop/tehUni/CAD/CA5/Test1/codes/top.v
+FC:/Users/Notebook/Desktop/tehUni/CAD/CA5/Test1/codes/top.v
+L0 1
+R2
+r1
+31
+R3
+!s85 0

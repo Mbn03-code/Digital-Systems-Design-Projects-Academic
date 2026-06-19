@@ -1,0 +1,21 @@
+module not #(parameter N = 1) (
+    input  wire [N-1:0] a,
+    output wire [N-1:0] not_out
+);
+    genvar i;
+    generate
+        for (i = 0; i < N; i = i + 1) begin : not_gen
+            C1 not_gate (
+                .A0(1'b1),
+                .A1(1'b1),
+                .SA(1'b1),
+                .B0(1'b0),
+                .B1(1'b0),
+                .SB(1'b0),
+                .S0(a[i]),
+                .S1(a[i]),
+                .f(not_out[i])
+            );
+        end
+    endgenerate
+endmodule

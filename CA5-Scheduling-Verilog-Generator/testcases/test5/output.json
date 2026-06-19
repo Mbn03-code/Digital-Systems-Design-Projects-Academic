@@ -1,0 +1,47 @@
+{
+    "2": {
+        "clk": 1,
+        "resource_type": "MUL",
+        "resource_num": 1
+    },
+    "4": {
+        "clk": 2,
+        "resource_type": "ALU",
+        "resource_num": 1
+    },
+    "7": {
+        "clk": 1,
+        "resource_type": "MUL",
+        "resource_num": 2
+    },
+    "9": {
+        "clk": 2,
+        "resource_type": "ALU",
+        "resource_num": 2
+    },
+    "10": {
+        "clk": 3,
+        "resource_type": "LOG",
+        "resource_num": 1
+    },
+    "13": {
+        "clk": 2,
+        "resource_type": "ALU",
+        "resource_num": 3
+    },
+    "16": {
+        "clk": 2,
+        "resource_type": "MUL",
+        "resource_num": 1
+    },
+    "17": {
+        "clk": 3,
+        "resource_type": "LOG",
+        "resource_num": 2
+    },
+    "18": {
+        "clk": 4,
+        "resource_type": "MUL",
+        "resource_num": 1
+    }
+}

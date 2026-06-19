@@ -1,0 +1,22 @@
+module xor #(parameter N = 1) (
+    input  wire [N-1:0] a,
+    input  wire [N-1:0] b,
+    output wire [N-1:0] xor_out
+);
+    genvar i;
+    generate
+        for (i = 0; i < N; i = i + 1) begin : xor_gen
+            C2 xor_gate (
+                .D0(1'b0),
+                .D1(1'b1),
+                .D2(1'b1),
+                .D3(1'b0),
+                .A1(a[i]),
+                .B1(b[i]),
+                .A0(a[i]),
+                .B0(b[i]),
+                .out(xor_out[i])
+            );
+        end
+    endgenerate
+endmodule

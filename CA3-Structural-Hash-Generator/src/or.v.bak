@@ -1,0 +1,26 @@
+module or #(
+    parameter N = 8
+) (
+    input  wire [N-1:0] a,
+    input  wire [N-1:0] b,
+    output wire [N-1:0] or_out
+);
+
+    genvar i;
+    generate
+        for (i = 0; i < N; i = i + 1) begin : or_bit
+            C1 or_inst (
+                .A0(a[i]),
+                .A1(a[i]),
+                .SA(1'b1),
+                .B0(1'b1),
+                .B1(1'b1),
+                .SB(1'b1),
+                .S0(b[i]),
+                .S1(b[i]),
+                .f(or_out[i])
+            );
+        end
+    endgenerate
+
+endmodule

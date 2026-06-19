@@ -1,0 +1,251 @@
+m255
+K3
+13
+cModel Technology
+dC:\Users\Notebook\Desktop\tehUni\CAD\CA3\FPGA_src
+vadder
+I]TWidTAXOCSlPY>ZHk53Q3
+VOKaMfhn;SLfJ9zD>D>O4?2
+Z0 dC:\Users\Notebook\Desktop\tehUni\CAD\CA4\FPGA
+w1765705367
+8C:/Users/Notebook/Desktop/tehUni/CAD/CA4/FPGA/adder.v
+FC:/Users/Notebook/Desktop/tehUni/CAD/CA4/FPGA/adder.v
+L0 1
+Z1 OV;L;6.3g_p1;37
+r1
+31
+Z2 o-work work -nocovercells -O0
+!s85 0
+vconstant_rom
+ISG7H06L^;ElUBLKk7X[jV3
+VYdoQjFK0eHB@HEz9Xg?AM0
+Z3 dC:\Users\Notebook\Desktop\tehUni\CAD\CA4\FPGA
+w1765706078
+8C:/Users/Notebook/Desktop/tehUni/CAD/CA4/FPGA/constant_rom.v
+FC:/Users/Notebook/Desktop/tehUni/CAD/CA4/FPGA/constant_rom.v
+L0 1
+R1
+r1
+31
+R2
+!s85 0
+vcounter
+IKK6j6lBIUnzhDkiJ6d?1[1
+VePSzdTo?F8o?L]VzH_Udb0
+R3
+w1765704084
+8C:/Users/Notebook/Desktop/tehUni/CAD/CA4/FPGA/counter.v
+FC:/Users/Notebook/Desktop/tehUni/CAD/CA4/FPGA/counter.v
+L0 2
+R1
+r1
+31
+R2
+!s85 0
+vF_function
+IM@CJN7MNNhzKmQFPYb_Rb0
+VGLHU[B123e:38Zi>5U:WX0
+R3
+w1765704309
+8C:/Users/Notebook/Desktop/tehUni/CAD/CA4/FPGA/F_function.v
+FC:/Users/Notebook/Desktop/tehUni/CAD/CA4/FPGA/F_function.v
+L0 1
+R1
+r1
+31
+R2
+n@f_function
+!s85 0
+vGH
+INZSLT@IokFM4ISH:F5^`e1
+VCB44McN2T[N2KmiHbCP_H2
+R3
+w1765726391
+Z4 8C:/Users/Notebook/Desktop/tehUni/CAD/CA4/FPGA/GH.v
+Z5 FC:/Users/Notebook/Desktop/tehUni/CAD/CA4/FPGA/GH.v
+L0 1
+R1
+r1
+31
+R2
+n@g@h
+!s85 0
+vGH_controller
+IFW:kF]>R2bffbILFz>oB13
+VDGmN1eQR^c9]l17kG5eXd3
+R3
+w1765726168
+8C:/Users/Notebook/Desktop/tehUni/CAD/CA4/FPGA/GH_controller.v
+FC:/Users/Notebook/Desktop/tehUni/CAD/CA4/FPGA/GH_controller.v
+L0 1
+R1
+r1
+31
+R2
+n@g@h_controller
+!s85 0
+vGH_datapath
+I4UAe[e292K72cn?lF]emV3
+V5Y8O:;gMBV=EgQ6Ha<gdo0
+R3
+w1765727882
+Z6 8C:/Users/Notebook/Desktop/tehUni/CAD/CA4/FPGA/GH_datapath.v
+Z7 FC:/Users/Notebook/Desktop/tehUni/CAD/CA4/FPGA/GH_datapath.v
+L0 1
+R1
+r1
+31
+R2
+n@g@h_datapath
+!s85 0
+vGH_datapath_tb
+InON_U]J@j:fLHOb2nAQZC0
+VGNLM7PhVHXYfE_313=Xnb2
+R3
+w1765726520
+R6
+R7
+L0 116
+R1
+r1
+31
+R2
+n@g@h_datapath_tb
+!s85 0
+vGH_top
+Ie[Ebmn4VZa[<PB[0IOeQW1
+V[_M4fObTz6h?ieCi=ahGM1
+R3
+w1765714691
+R4
+R5
+L0 1
+R1
+r1
+31
+R2
+n@g@h_top
+!s85 0
+vGH_top_tb
+IZbhK2a^N;A8oJHfJ3Ya1z0
+VY1_k^dY;^oKbc@F39:TEl0
+R3
+w1765726272
+8C:/Users/Notebook/Desktop/tehUni/CAD/CA4/FPGA/tb_top.v
+FC:/Users/Notebook/Desktop/tehUni/CAD/CA4/FPGA/tb_top.v
+L0 1
+R1
+r1
+!s85 0
+31
+R2
+n@g@h_top_tb
+vPRNG
+I@QJ32C4:<nL2G4J_8`S^70
+VHY=_0FnnRU0llI>L9WaGK2
+R3
+Z8 w1765726815
+Z9 8C:/Users/Notebook/Desktop/tehUni/CAD/CA4/FPGA/PRNG-TOP.v
+Z10 FC:/Users/Notebook/Desktop/tehUni/CAD/CA4/FPGA/PRNG-TOP.v
+L0 1
+R1
+r1
+31
+R2
+n@p@r@n@g
+!s85 0
+vPRNG_controller
+IY8T``F66ll^AVGFPQ?OJK2
+VYNWTDTk><o_PBCoAJJ[2R0
+R3
+w1765728571
+8C:/Users/Notebook/Desktop/tehUni/CAD/CA4/FPGA/PRNG_controller.v
+FC:/Users/Notebook/Desktop/tehUni/CAD/CA4/FPGA/PRNG_controller.v
+L0 1
+R1
+r1
+31
+R2
+n@p@r@n@g_controller
+!s85 0
+vPRNG_Datapath
+Ib>Jg<n:=WHFbJQS9?K0XF3
+Vd[OJ7X4^;1YFZCQTmznWP1
+R3
+w1765724266
+8C:/Users/Notebook/Desktop/tehUni/CAD/CA4/FPGA/PRNG_datapath.v
+FC:/Users/Notebook/Desktop/tehUni/CAD/CA4/FPGA/PRNG_datapath.v
+L0 1
+R1
+r1
+31
+R2
+n@p@r@n@g_@datapath
+!s85 0
+vPRNG_tb
+Ih[YPV0R7ng@ecf1AF:7V71
+V3N4a>z08ncW6fHI:RDdjY3
+R3
+R8
+R9
+R10
+L0 42
+R1
+r1
+31
+R2
+n@p@r@n@g_tb
+!s85 0
+vregfile4x8_parallel
+ISE7;@=3QQG6Z1WYbLoN;[0
+V]z1Tme?b>n=URGfImfkhi1
+R3
+w1765704938
+Z11 8C:/Users/Notebook/Desktop/tehUni/CAD/CA4/FPGA/registerFile.v
+Z12 FC:/Users/Notebook/Desktop/tehUni/CAD/CA4/FPGA/registerFile.v
+L0 1
+R1
+r1
+31
+R2
+!s85 0
+vregister
+IQ83XbaKLbP<QNk_Xl5leg3
+VA8f8?CP6KzXhfXK0=EIKP2
+R3
+w1765704277
+8C:/Users/Notebook/Desktop/tehUni/CAD/CA4/FPGA/register.v
+FC:/Users/Notebook/Desktop/tehUni/CAD/CA4/FPGA/register.v
+L0 1
+R1
+r1
+31
+R2
+!s85 0
+vregisterFile
+I[4F^Af2^oEZf9f8l7@43F0
+VDelQk8emABb4KnaX0<8d[2
+R3
+w1765726504
+R11
+R12
+L0 1
+R1
+r1
+31
+R2
+nregister@file
+!s85 0
+vshift_register
+I[SnFi;n;ckziF`L]mV@^L1
+VUe53ok0@n`=A@:=Taj9hz2
+R3
+w1765705767
+8C:/Users/Notebook/Desktop/tehUni/CAD/CA4/FPGA/shiftRegister.v
+FC:/Users/Notebook/Desktop/tehUni/CAD/CA4/FPGA/shiftRegister.v
+L0 1
+R1
+r1
+31
+R2
+!s85 0

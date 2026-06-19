@@ -1,0 +1,90 @@
+module adder4x8 (
+    input  wire [7:0] a,
+    input  wire [7:0] b,
+    input  wire [7:0] c,
+    input  wire [7:0] d,
+    output wire [7:0] sum,
+    output wire       cout
+);
+    wire [7:0] sum1, sum2;
+    wire       c1, c2;
+
+    // جمع اول: a + b
+    adder_n #(8) adder_ab (
+        .a(a),
+        .b(b),
+        .cin(1'b0),
+        .sum(sum1),
+        .cout(c1)
+    );
+
+    // جمع دوم: sum1 + c
+    adder_n #(8) adder_abc (
+        .a(sum1),
+        .b(c),
+        .cin(c1),
+        .sum(sum2),
+        .cout(c2)
+    );
+
+    // جمع سوم: sum2 + d
+    adder_n #(8) adder_abcd (
+        .a(sum2),
+        .b(d),
+        .cin(c2),
+        .sum(sum),
+        .cout(cout)
+    );
+endmodule
+
+
+/----------------
+`timescale 1ns/1ps
+
+module test_adder4x8;
+
+    reg  [7:0] a, b, c, d;
+    wire [7:0] sum;
+    wire       cout;
+
+    adder4x8 dut (
+        .a(a),
+        .b(b),
+        .c(c),
+        .d(d),
+        .sum(sum),
+        .cout(cout)
+    );
+
+    integer i;
+
+    initial begin
+        $display("\n---- TESTING adder4x8 ----");
+
+        // حالت‌های مستقیم
+        a=1; b=2; c=3; d=4; #1;
+        if ({cout,sum} !== (a+b+c+d))
+            $display("ERR 1+2+3+4");
+
+        a=8'hFF; b=8'h01; c=8'h00; d=8'h00; #1;
+        if ({cout,sum} !== (a+b+c+d))
+            $display("ERR FF+01");
+
+        // تست‌های رندوم
+        for (i=0; i<100; i=i+1) begin
+            a = $random;
+            b = $random;
+            c = $random;
+            d = $random;
+            #1;
+
+            if ({cout,sum} !== (a+b+c+d))
+                $display("ERROR RANDOM: a=%h b=%h c=%h d=%h -> sum=%h cout=%b expected=%h",
+                        a,b,c,d,sum,cout,a+b+c+d);
+        end
+
+        $display("---- adder4x8 TEST DONE ----\n");
+        $finish;
+    end
+
+endmodule

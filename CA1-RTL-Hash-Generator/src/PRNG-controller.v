@@ -1,0 +1,58 @@
+module PRNG_controller(
+    input wire clk,
+    input wire reset,
+    input wire start,
+    input wire count_done,
+
+    output reg load_reg,
+    output reg count_enable
+);
+
+    typedef enum reg [1:0] {
+        S_IDLE  = 2'b00,
+        S_LOAD  = 2'b01,
+        S_SHIFT = 2'b10,
+        S_DONE  = 2'b11
+    } state;
+
+    state p_state, n_state;
+
+    
+    always @(posedge clk or posedge reset) begin
+        if (reset)
+            p_state <= S_IDLE;
+        else
+            p_state <= n_state;
+    end
+
+ 
+    always @(*) begin
+        n_state = p_state;
+        load_reg = 1'b0;
+        count_enable = 1'b0;
+        
+        case (p_state)
+            S_IDLE: begin
+                if (start) 
+                    n_state = S_LOAD;
+            end
+            
+            S_LOAD: begin
+                load_reg = 1'b1;
+                n_state = S_SHIFT;
+            end
+            
+            S_SHIFT: begin
+                count_enable = 1'b1;
+                if (count_done)
+                    n_state = S_DONE;
+            end
+            
+            S_DONE: begin
+                if (!start)
+                    n_state = S_IDLE;
+            end
+        endcase
+    end
+
+endmodule

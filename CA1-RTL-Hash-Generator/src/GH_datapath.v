@@ -1,0 +1,121 @@
+module GH_datapath(
+    input  wire        clk,
+    input  wire        reset,
+    input  wire [127:0] data_in,
+    input  wire [5:0]  count,
+
+    input  wire        start_prng,
+    output wire        prng_done,
+
+    input  wire        stage_load,
+    input  wire [2:0]  stage_sel,
+    input  wire        load_init,   
+
+    output wire [127:0] data_out
+);
+    
+    wire [31:0] a0 = 32'h67452301;
+    wire [31:0] b0 = 32'hefcdab89;
+    wire [31:0] c0 = 32'h98badcfe;
+    wire [31:0] d0 = 32'h10325476;
+
+    reg [31:0] constant [0:63];
+    initial $readmemh("constant.mem", constant);
+
+    wire [31:0] M [0:3];
+    assign M[0] = data_in[31:0];
+    assign M[1] = data_in[63:32];
+    assign M[2] = data_in[95:64];
+    assign M[3] = data_in[127:96];
+
+    
+    wire [31:0] A, B, C, D;
+    wire [31:0] adder2_out;  
+    wire [31:0] reg_adder1_out, reg_rotate_out;
+
+    
+    
+    
+    // ??????? ?? load_init_sync ??????? ??????
+    register A_reg (.clk(clk), .reset(reset),
+                    .load(load_init || (stage_sel==3 && stage_load)),
+                    .d_in(load_init ? a0 : D),
+                    .q_out(A));
+    
+
+    register B_reg (.clk(clk), .reset(reset),
+                    .load(load_init || (stage_sel==3 && stage_load)),
+                    .d_in(load_init ? b0 : adder2_out),
+                    .q_out(B));
+
+    register C_reg (.clk(clk), .reset(reset),
+                    .load(load_init || (stage_sel==3 && stage_load)),
+                    .d_in(load_init ? c0 : B),
+                    .q_out(C));
+
+    register D_reg (.clk(clk), .reset(reset),
+                    .load(load_init || (stage_sel==3 && stage_load)),
+                    .d_in(load_init ? d0 : C),
+                    .q_out(D));
+
+    // --- PRNG ---
+    wire [1:0] rnd_out;
+    PRNG PRNG_inst (
+        .clk(clk),
+        .reset(reset),
+        .start(start_prng),
+        .data_in(count),
+        .rnd_out(rnd_out),
+        .done(prng_done)
+    );
+
+    wire [31:0] M_rnd = (rnd_out==2'd0)? M[3] :
+                         (rnd_out==2'd1)? M[2] :
+                         (rnd_out==2'd2)? M[1] : M[0];
+
+    wire [31:0] reg_prng_out;
+    register reg_prng (.clk(clk), .reset(reset),
+                       .load(prng_done),
+                       .d_in(M_rnd),
+                       .q_out(reg_prng_out));
+
+    
+    wire [31:0] F_out;
+    F_function F_inst (.i(count), .B(B), .C(C), .D(D), .F(F_out));
+
+    // --- Adder1 ---
+    wire [31:0] adder1_out;
+    adder #(.WIDTH(32), .N(4)) adder1 (
+        .numbers({F_out, A, reg_prng_out, constant[count]}),
+        .SUM(adder1_out)
+    );
+
+    register reg_adder1 (.clk(clk), .reset(reset),
+                         .load(stage_sel==1 && stage_load),
+                         .d_in(adder1_out),
+                         .q_out(reg_adder1_out));
+
+    // --- Rotate ---
+    wire [31:0] rotated;
+    rotate rotate_inst (.i(count), .F(reg_adder1_out), .rotated_f(rotated));
+
+    register reg_rotate (.clk(clk), .reset(reset),
+                         .load(stage_sel==2 && stage_load),
+                         .d_in(rotated),
+                         .q_out(reg_rotate_out));
+
+    
+    adder #(.WIDTH(32), .N(2)) adder2 (
+        .numbers({B, reg_rotate_out}),
+        .SUM(adder2_out)
+    );
+
+    wire [31:0] reg_adder2_out;
+    register reg_adder2 (.clk(clk), .reset(reset),
+                         .load(stage_sel==3 && stage_load),
+                         .d_in(adder2_out),
+                         .q_out(reg_adder2_out));
+
+    
+    assign data_out = {A, B, C, D};
+endmodule
